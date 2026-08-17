@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conserto de Notebook em Volta Redonda - RJ | Nova Techouse</title>
+  <meta name="description" content="Assistência técnica especializada em conserto de notebook em Volta Redonda e Resende. Reparos de tela, carcaça, placa-mãe e limpeza térmica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="icon" type="image/avif" href="/favicon/favicon.avif">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primary text-textMain antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+  <div class="noise-overlay"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-3 left-1/2 -translate-x-1/2 w-[96%] max-w-6xl z-50 transition-all duration-300 rounded-full px-5 py-2.5 glass-panel flex items-center justify-between">
+  <a href="/" aria-label="Nova Techouse - Página Inicial" class="flex items-center gap-2 cursor-pointer magnetic-btn">
+    <img src="/logo/logo-navbar.avif" alt="Nova Techouse" width="83" height="40" class="h-8 w-auto">
+  </a>
+
+  <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-textMuted" aria-label="Navegação Principal">
+    <a href="/" class="link-hover hover:text-white transition-colors">Início</a>
+    <div class="relative group">
+      <a href="/#servicos" class="link-hover hover:text-white transition-colors flex items-center gap-1">Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <div class="services-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[460px] max-h-[75vh] overflow-y-auto no-scrollbar bg-[#0D0D12]/98 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 grid grid-cols-2 p-2.5 gap-1 z-50">
+        <a href="/servicos/conserto-de-notebook/" class="px-3 py-2 rounded-xl text-xs text-accent font-bold bg-white/5 hover:bg-white/10 hover:text-white transition-colors flex items-center">Conserto de Notebook</a>
+        <a href="/servicos/conserto-de-computador/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Conserto de Computador</a>
+        <a href="/servicos/formatacao/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Formatação</a>
+        <a href="/servicos/instalacao-do-windows/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Instalação do Windows</a>
+        <a href="/servicos/remocao-de-virus/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Remoção de Vírus</a>
+        <a href="/servicos/limpeza-interna/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Limpeza Interna</a>
+        <a href="/servicos/troca-de-pasta-termica/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Troca de Pasta Térmica</a>
+        <a href="/servicos/upgrade-de-ssd/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Upgrade de SSD</a>
+        <a href="/servicos/upgrade-de-memoria-ram/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Upgrade de Memória RAM</a>
+        <a href="/servicos/troca-de-hd/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Troca de HD</a>
+        <a href="/servicos/reparo-de-placa-mae/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Reparo de Placa-Mãe</a>
+        <a href="/servicos/recuperacao-de-dados/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Recuperação de Dados</a>
+        <a href="/servicos/backup/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Backup</a>
+        <a href="/servicos/instalacao-de-drivers/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Instalação de Drivers</a>
+        <a href="/servicos/otimizacao-de-computador/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Otimização de Computador</a>
+        <a href="/servicos/manutencao-preventiva/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">Manutenção Preventiva</a>
+        
+      </div>
+    </div>
+    
+    <a href="/#diferenciais" class="link-hover hover:text-white transition-colors">Diferenciais</a>
+    
+    <div class="relative group">
+      <a href="/areas/" class="link-hover hover:text-white transition-colors flex items-center gap-1">Regiões Atendidas <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <div class="absolute top-full right-0 mt-3 w-48 bg-[#0D0D12]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col py-2 z-50">
+        <a href="/areas/volta-redonda/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors border-b border-white/5">Volta Redonda</a>
+        <a href="/areas/resende/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors">Resende</a>
+        
+      </div>
+    </div>
+    
+    <a href="/#contato-info" class="link-hover hover:text-white transition-colors">Contato</a>
+  </nav>
+
+  <div class="flex items-center gap-2">
+    <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank" rel="noopener noreferrer" class="magnetic-btn bg-accent text-white hover:bg-accent-hover px-4 py-1.5 rounded-full text-xs font-bold transition-colors hidden sm:flex items-center gap-1.5 shadow-md shadow-accent/25">
+      Falar no WhatsApp
+    </a>
+    <button id="mobile-menu-btn" class="lg:hidden flex flex-col items-center justify-center w-10 h-10 gap-[5px]" aria-label="Menu de navegação">
+      <span class="block w-5 h-[2px] bg-white rounded transition-all duration-300" id="hb1"></span>
+      <span class="block w-5 h-[2px] bg-white rounded transition-all duration-300" id="hb2"></span>
+      <span class="block w-3.5 h-[2px] bg-white rounded transition-all duration-300" id="hb3"></span>
+    </button>
+  </div>
+</header>
+
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu" class="flex-col-8 bg-[#050505]/98 hidden">
+ <div class="flex-col-9 flex">
+ <a href="/" class="heading-base-4 mobile-menu-link">Início</a>
+ <div class="borderb-borderwhite5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
+ Serviços <i data-lucide="chevron-down" class="icon-4-4"></i>
+ </button>
+ <div class="flex-col-10 hidden flex">
+ <a href="/servicos/conserto-de-notebook/" class="text-sm-muted-9">Conserto de Notebook</a>
+ <a href="/servicos/conserto-de-computador/" class="text-sm-muted-9">Conserto de Computador</a>
+ <a href="/servicos/formatacao/" class="text-sm-muted-9">Formatação</a>
+ <a href="/servicos/instalacao-do-windows/" class="text-sm-muted-9">Instalação do Windows</a>
+ <a href="/servicos/remocao-de-virus/" class="text-sm-muted-9">Remoção de Vírus</a>
+ <a href="/servicos/limpeza-interna/" class="text-sm-muted-9">Limpeza Interna</a>
+ <a href="/servicos/troca-de-pasta-termica/" class="text-sm-muted-9">Troca de Pasta Térmica</a>
+ <a href="/servicos/upgrade-de-ssd/" class="text-sm-muted-9">Upgrade de SSD</a>
+ <a href="/servicos/upgrade-de-memoria-ram/" class="text-sm-muted-9">Upgrade de Memória RAM</a>
+ <a href="/servicos/troca-de-hd/" class="text-sm-muted-9">Troca de HD</a>
+ <a href="/servicos/reparo-de-placa-mae/" class="text-sm-muted-9">Reparo de Placa-Mãe</a>
+ <a href="/servicos/recuperacao-de-dados/" class="text-sm-muted-9">Recuperação de Dados</a>
+ <a href="/servicos/backup/" class="text-sm-muted-9">Backup</a>
+ <a href="/servicos/instalacao-de-drivers/" class="text-sm-muted-9">Instalação de Drivers</a>
+ <a href="/servicos/otimizacao-de-computador/" class="text-sm-muted-9">Otimização de Computador</a>
+ <a href="/servicos/manutencao-preventiva/" class="text-sm-muted-9">Manutenção Preventiva</a>
+ 
+ </div>
+ </div>
+ 
+ 
+ <div class="borderb-borderwhite5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
+ Regiões Atendidas <i data-lucide="chevron-down" class="icon-4-4"></i>
+ </button>
+ <div class="flex-col-10 hidden flex">
+ <a href="/areas/volta-redonda/" class="text-sm-muted-9">Volta Redonda</a>
+ <a href="/areas/resende/" class="text-sm-muted-9">Resende</a>
+ 
+ </div>
+ </div>
+ 
+ <a href="/#diferenciais" class="heading-base-4">Diferenciais</a>
+ <a href="/#contato-info" class="heading-base-4">Contato</a>
+ 
+ <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-accent-4 flex">
+  Falar no WhatsApp <i data-lucide="arrow-right" class="icon-4"></i>
+ </a>
+ </div>
+</div>
+
+
+  <!-- 1. HEADER SEO -->
+<section class="relative w-full pt-32 pb-10 px-6 md:px-12 lg:px-24 hero-bg text-center">
+  <div class="max-w-4xl mx-auto flex flex-col items-center gap-4">
+    <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold tracking-tighter leading-[1.1] text-white">
+      Conserto de Notebook em Volta Redonda - RJ
+    </h1>
+    <p class="text-lg text-textMuted max-w-2xl font-light leading-relaxed mt-2">
+      Diagnóstico e reparo especializado para notebooks de diversas marcas. Soluções para problemas de inicialização, tela, carcaça, teclado e eletrônica.
+    </p>
+  </div>
+</section>
+<!-- 2. IMAGEM HORIZONTAL -->
+<section class="px-6 md:px-12 lg:px-24 mb-16 relative z-20">
+  <div class="max-w-5xl mx-auto h-[30vh] md:h-[400px] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative">
+    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=2000&q=80" alt="Conserto de notebook em laboratório" class="w-full h-full object-cover grayscale-[30%]">
+    <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
+  </div>
+</section>
+<!-- CONTEÚDO SEO DENSO -->
+<section class="py-12 relative">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="mb-16">
+      <h2 class="text-3xl font-display font-bold mb-6 text-white">Principais falhas e sintomas em notebooks</h2>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        Notebooks são equipamentos compactos sujeitos a desgastes térmicos e mecânicos constantes. Sintomas como desligamentos repentinos durante o uso, lentidão extrema ao alternar programas, teclado com teclas falhando ou ruído excessivo na ventoinha indicam a necessidade de avaliação técnica especializada.
+      </p>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        Falhas estruturais também ocorrem com frequência. Dobradiças ressecadas ou endurecidas exercem pressão excessiva sobre a carcaça plástica, podendo quebrar suportes internos e romper cabos flat que conectam a tela à placa-mãe. Identificar e tratar o problema no início evita danos a componentes mais caros.
+      </p>
+    </div>
+    <div class="mb-16">
+      <h2 class="text-3xl font-display font-bold mb-6 text-white">Diagnóstico de hardware e componentes integrados</h2>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        A arquitetura condensada dos notebooks exige análise cuidadosa de cada circuito. Problemas em que o aparelho não liga ou não carrega a bateria podem ter origem na fonte externa, no conector de carga (Jack DC), no circuito regulador de tensão ou na própria placa-mãe. Nesses casos mais complexos, o <a href="/servicos/reparo-de-placa-mae/" class="text-accent hover:underline font-medium">Reparo de Placa-Mãe</a> permite recuperar o equipamento sem a necessidade de substituição completa do circuito.
+      </p>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        Quando o equipamento apresenta travamentos constantes sob carga de trabalho pesada, a temperatura interna pode estar atingindo níveis críticos. A realização de uma <a href="/servicos/limpeza-interna/" class="text-accent hover:underline font-medium">Limpeza Interna</a> combinada à <a href="/servicos/troca-de-pasta-termica/" class="text-accent hover:underline font-medium">Troca de Pasta Térmica</a> restabelece a dissipação adequada de calor e preserva a vida útil do processador.
+      </p>
+    </div>
+    <div class="mb-16">
+      <h2 class="text-3xl font-display font-bold mb-6 text-white">Upgrades para recuperação de desempenho</h2>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        Muitas vezes, a lentidão percebida no uso diário não decorre de defeito físico irreversível, mas sim de limitações de componentes antigos. A substituição do disco mecânico por um <a href="/servicos/upgrade-de-ssd/" class="text-accent hover:underline font-medium">Upgrade de SSD</a> reduz drasticamente o tempo de inicialização do sistema e a abertura de programas.
+      </p>
+      <p class="text-textMuted leading-relaxed mb-4 text-lg">
+        Para usuários que trabalham com múltiplas abas abertas ou softwares pesados, a expansão por meio de um <a href="/servicos/upgrade-de-memoria-ram/" class="text-accent hover:underline font-medium">Upgrade de Memória RAM</a> evita o congelamento do sistema e garante fluidez nas tarefas cotidianas.
+      </p>
+    </div>
+    <!-- FAQ / DÚVIDAS FREQUENTES -->
+    <div class="mt-16 pt-12 border-t border-white/10">
+      <h2 class="text-3xl font-display font-bold mb-8 text-white">Dúvidas Frequentes</h2>
+      <div class="space-y-6">
+        <div class="glass-panel p-6 rounded-2xl border border-white/5">
+          <h3 class="text-lg font-bold text-white mb-2">Vale a pena consertar um notebook que não liga?</h3>
+          <p class="text-textMuted leading-relaxed text-base">Na maioria das situações, o defeito está restrito a componentes específicos como conector de carga, fonte ou circuitos de proteção da placa. A viabilidade do reparo é determinada após a análise técnica do equipamento.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-white/5">
+          <h3 class="text-lg font-bold text-white mb-2">Por que o notebook desliga sozinho durante o uso?</h3>
+          <p class="text-textMuted leading-relaxed text-base">O desligamento involuntário frequentemente ocorre por mecanismo de proteção térmica quando o processador atinge temperaturas excessivas, ou por instabilidades no circuito elétrico e na bateria.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-white/5">
+          <h3 class="text-lg font-bold text-white mb-2">Notebook travando sempre é sinal de defeito de hardware?</h3>
+          <p class="text-textMuted leading-relaxed text-base">Não necessariamente. Travamentos podem ser causados por sobrecarga do sistema operacional, acúmulo de arquivos corrompidos, malwares ou limitações de memória e armazenamento.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-white/5">
+          <h3 class="text-lg font-bold text-white mb-2">Como proceder se a dobradiça da tela estiver dura ou quebrada?</h3>
+          <p class="text-textMuted leading-relaxed text-base">Recomenda-se evitar forçar a abertura ou fechamento da tampa para não romper a tela LCD nem o cabo de vídeo, encaminhando o notebook para reconstrução da carcaça e alívio de tensão nas dobradiças.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- LINKAGEM INTERNA (Serviços Relacionados) -->
+<section class="py-24 relative border-t border-white/5 ">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+    <h2 class="text-3xl font-display font-bold mb-10 text-white">Serviços Relacionados</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/servicos/upgrade-de-ssd/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Upgrade de SSD</h3>
+          <p class="text-xs text-textMuted">Aumente a velocidade do notebook em até 10x.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+      <a href="/servicos/limpeza-interna/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Limpeza Interna</h3>
+          <p class="text-xs text-textMuted">Desobstrução de coolers e controle de temperatura.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+      <a href="/servicos/reparo-de-placa-mae/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Reparo de Placa-Mãe</h3>
+          <p class="text-xs text-textMuted">Recuperação de circuitos e eletrônica avançada.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+      <a href="/servicos/upgrade-de-memoria-ram/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Upgrade de Memória RAM</h3>
+          <p class="text-xs text-textMuted">Mais capacidade para multitarefas sem travamentos.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+      <a href="/servicos/troca-de-pasta-termica/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Troca de Pasta Térmica</h3>
+          <p class="text-xs text-textMuted">Aplicação de composto térmico de alta condutividade.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+      <a href="/servicos/formatacao/" class="glass-panel p-6 rounded-2xl border border-white/5 hover:border-accent/30 transition-all group flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-1 text-white">Formatação</h3>
+          <p class="text-xs text-textMuted">Restauração limpa do sistema operacional.</p>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-accent transition-colors"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- CTA FINAL -->
+<section class="py-24 relative border-t border-accent/20 hero-bg text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-4xl font-display font-bold mb-6 text-white">Precisa consertar seu notebook?</h2>
+    <p class="text-lg text-textMuted mb-10">Traga seu equipamento para a Nova Techouse na Vila Santa Cecília, Volta Redonda, ou tire suas dúvidas diretamente pelo WhatsApp.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="https://wa.me/5524999294213?text=Olá! Vim pelo site da Nova Techouse. Preciso de informações sobre conserto de notebook." target="_blank" rel="noopener noreferrer" class="magnetic-btn w-full sm:w-auto bg-accent text-white px-8 py-4 rounded-full text-sm font-bold flex items-center justify-center gap-2 hover:bg-accent-hover transition-all shadow-lg shadow-accent/25">
+        Falar no WhatsApp <i data-lucide="message-square" class="w-4 h-4"></i>
+      </a>
+      <a href="/areas/" class="magnetic-btn w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white">
+        <i data-lucide="map-pin" class="w-4 h-4"></i> Ver Regiões Atendidas
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-transparent pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div class="flex flex-col gap-3">
+        <h4 class="text-base font-display font-bold text-white mb-1">NOVA TECHOUSE</h4>
+        <p class="text-textMuted text-xs leading-relaxed max-w-sm">Assistência técnica especializada em manutenção e conserto de notebooks em Volta Redonda.</p>
+        
+        <div class="pt-2">
+          <a href="https://www.instagram.com/techousevr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-accent/50 hover:bg-accent/10 text-white transition-all text-xs font-semibold group w-fit">
+            <i data-lucide="instagram" class="w-3.5 h-3.5 text-accent group-hover:scale-110 transition-transform"></i>
+            <span>Siga no Instagram</span>
+            <i data-lucide="arrow-up-right" class="w-3 h-3 text-textMuted group-hover:text-accent transition-colors"></i>
+          </a>
+        </div>
+        
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white mb-4">Navegação</h4>
+        <ul class="text-xs text-textMuted flex flex-col gap-2.5">
+          <li><a href="/" class="hover:text-accent transition-colors">Início</a></li>
+          <li><a href="/#servicos" class="hover:text-accent transition-colors">Serviços</a></li>
+          
+          <li><a href="/areas/" class="hover:text-accent transition-colors">Regiões Atendidas</a></li>
+          <li><a href="/#contato-info" class="hover:text-accent transition-colors">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white mb-4">Contato & Atendimento</h4>
+        <ul class="text-xs text-textMuted flex flex-col gap-2.5">
+          <li class="flex items-start gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-accent shrink-0 mt-0.5"></i>
+            <span>Rua 16, 109 - Sala 8, Vila Santa Cecília, Volta Redonda - RJ</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-accent shrink-0"></i>
+            <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">(24) 99929-4213</a>
+          </li>
+          
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-accent shrink-0"></i>
+            <a href="mailto:vendasvr@techousepc.com.br" class="hover:text-accent transition-colors break-all">vendasvr@techousepc.com.br</a>
+          </li>
+          
+          <li class="flex items-start gap-2">
+            <i data-lucide="clock" class="w-4 h-4 text-accent shrink-0 mt-0.5"></i>
+            <span>Segunda a Sexta das 9h às 18h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 text-center text-xs text-textMuted">
+      <p>&copy; 2026 Nova Techouse. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <div class="fixed bottom-6 right-6 z-50 pointer-events-auto">
+  <div class="relative flex items-center justify-center w-16 h-16">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-40 blur-xl"></span>
+    <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-50 animate-ping"></span>
+    <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp com a Nova Techouse" class="relative w-14 h-14 rounded-full text-white flex items-center justify-center shadow-[0_8px_30px_rgba(37,211,102,0.55)] hover:shadow-[0_10px_40px_rgba(37,211,102,0.8)] hover:scale-110 active:scale-95 transition-all duration-300" style="background:radial-gradient(circle at 32% 26%, #6dffa8 0%, #25D366 42%, #0f9b52 78%, #0b7d42 100%);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="w-7 h-7 drop-shadow-[0_1px_1px_rgba(0,0,0,0.25)]">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+  <script>
+  lucide.createIcons();
+  </script>
+  <script>
+  (function(){var btn=document.getElementById('mobile-menu-btn');var menu=document.getElementById('mobile-menu');var hb1=document.getElementById('hb1');var hb2=document.getElementById('hb2');var hb3=document.getElementById('hb3');if(!btn)return;var open=false;function toggle(){open=!open;if(open){menu.classList.remove('hidden');menu.classList.add('flex');document.body.style.overflow='hidden';hb1.style.transform='translateY(7px) rotate(45deg)';hb2.style.opacity='0';hb3.style.transform='translateY(-7px) rotate(-45deg)';hb3.style.width='20px';}else{menu.classList.add('hidden');menu.classList.remove('flex');document.body.style.overflow='';hb1.style.transform='';hb2.style.opacity='';hb3.style.transform='';hb3.style.width='';}}btn.addEventListener('click',toggle);})();
+  </script>
+</body>
+</html>

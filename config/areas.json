@@ -1,0 +1,230 @@
+[
+  {
+    "slug": "volta-redonda",
+    "name": "Volta Redonda",
+    "meta_title": "Assistência Técnica em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Assistência técnica de notebooks e computadores em Volta Redonda. Endereço físico na Vila Santa Cecília. Atendimento especializado.",
+    "footer_blurb": "Assistência técnica especializada em notebooks e computadores em Volta Redonda - RJ.",
+    "neighborhoods": [
+      {
+        "slug": "vila-santa-cecilia",
+        "name": "Vila Santa Cecília",
+        "meta_title": "Assistência Técnica na Vila Santa Cecília | Volta Redonda | Nova Techouse",
+        "meta_description": "Conserto de notebooks e computadores na Vila Santa Cecília, Volta Redonda. Nossa sede física fica na Rua 16, 109 - Sala 8. Venha nos visitar."
+      },
+      {
+        "slug": "aterrado",
+        "name": "Aterrado",
+        "meta_title": "Assistência Técnica para o Aterrado | Volta Redonda | Nova Techouse",
+        "meta_description": "Manutenção de notebooks e PCs para moradores e empresas do Aterrado em Volta Redonda. Atendimento rápido e fácil acesso à nossa loja."
+      },
+      {
+        "slug": "retiro",
+        "name": "Retiro",
+        "meta_title": "Conserto de Notebook e PC no Retiro | Volta Redonda | Nova Techouse",
+        "meta_description": "Assistência técnica especializada para clientes do Retiro em Volta Redonda. Formatação, upgrade de SSD e reparo de placas."
+      },
+      {
+        "slug": "jardim-amalia",
+        "name": "Jardim Amália",
+        "meta_title": "Assistência Técnica no Jardim Amália | Volta Redonda | Nova Techouse",
+        "meta_description": "Serviços de informática e manutenção de computadores para o Jardim Amália em Volta Redonda. Soluções ágeis em notebooks e desktops."
+      },
+      {
+        "slug": "jardim-belvedere",
+        "name": "Jardim Belvedere",
+        "meta_title": "Conserto de Computadores no Jardim Belvedere | Volta Redonda | Nova Techouse",
+        "meta_description": "Atendimento técnico em informática para moradores do Jardim Belvedere em Volta Redonda. Upgrade, formatação e suporte especializado."
+      },
+      {
+        "slug": "laranjal",
+        "name": "Laranjal",
+        "meta_title": "Assistência Técnica no Laranjal | Volta Redonda | Nova Techouse",
+        "meta_description": "Suporte técnico e conserto de notebooks a poucos minutos do Laranjal em Volta Redonda. Diagnóstico rápido e garantia de serviço."
+      },
+      {
+        "slug": "sao-joao",
+        "name": "São João",
+        "meta_title": "Manutenção de PCs no São João | Volta Redonda | Nova Techouse",
+        "meta_description": "Manutenção preventiva e corretiva de computadores para clientes do bairro São João em Volta Redonda."
+      },
+      {
+        "slug": "sessenta",
+        "name": "Sessenta",
+        "meta_title": "Assistência Técnica no Bairro Sessenta | Volta Redonda | Nova Techouse",
+        "meta_description": "Conserto de notebook e PC perto do bairro Sessenta em Volta Redonda. Localização privilegiada na Vila Santa Cecília."
+      },
+      {
+        "slug": "agua-limpa",
+        "name": "Água Limpa",
+        "meta_title": "Assistência Técnica na Água Limpa | Volta Redonda | Nova Techouse",
+        "meta_description": "Serviços de informática e recuperação de sistema para clientes do bairro Água Limpa em Volta Redonda."
+      },
+      {
+        "slug": "voldac",
+        "name": "Voldac",
+        "meta_title": "Conserto de Notebook e PC no Voldac | Volta Redonda | Nova Techouse",
+        "meta_description": "Assistência técnica especializada em notebooks e computadores para o bairro Voldac em Volta Redonda."
+      },
+      {
+        "slug": "conforto",
+        "name": "Conforto",
+        "meta_title": "Assistência Técnica no Conforto | Volta Redonda | Nova Techouse",
+        "meta_description": "Manutenção de computadores e notebooks para clientes do Conforto em Volta Redonda. Soluções completas em hardware e software."
+      },
+      {
+        "slug": "niteroi",
+        "name": "Niterói",
+        "meta_title": "Conserto de Notebook no Niterói | Volta Redonda | Nova Techouse",
+        "meta_description": "Assistência técnica de computadores e notebooks para o bairro Niterói em Volta Redonda."
+      },
+      {
+        "slug": "santo-agostinho",
+        "name": "Santo Agostinho",
+        "meta_title": "Assistência Técnica no Santo Agostinho | Volta Redonda | Nova Techouse",
+        "meta_description": "Suporte técnico e manutenção para computadores de moradores do Santo Agostinho em Volta Redonda."
+      },
+      {
+        "slug": "santa-cruz",
+        "name": "Santa Cruz",
+        "meta_title": "Conserto de Computadores na Santa Cruz | Volta Redonda | Nova Techouse",
+        "meta_description": "Assistência técnica especializada em notebooks e PCs para o bairro Santa Cruz em Volta Redonda."
+      },
+      {
+        "slug": "roma",
+        "name": "Roma",
+        "meta_title": "Assistência Técnica no Roma | Volta Redonda | Nova Techouse",
+        "meta_description": "Atendimento técnico para computadores e notebooks de moradores do bairro Roma em Volta Redonda."
+      },
+      {
+        "slug": "ponte-alta",
+        "name": "Ponte Alta",
+        "meta_title": "Manutenção de Notebooks na Ponte Alta | Volta Redonda | Nova Techouse",
+        "meta_description": "Serviços de reparo de placa-mãe, limpeza térmica e upgrade de SSD para o bairro Ponte Alta em Volta Redonda."
+      },
+      {
+        "slug": "sao-geraldo",
+        "name": "São Geraldo",
+        "meta_title": "Assistência Técnica no São Geraldo | Volta Redonda | Nova Techouse",
+        "meta_description": "Conserto de notebooks e computadores para clientes do bairro São Geraldo em Volta Redonda."
+      },
+      {
+        "slug": "vila-mury",
+        "name": "Vila Mury",
+        "meta_title": "Manutenção de PCs na Vila Mury | Volta Redonda | Nova Techouse",
+        "meta_description": "Assistência técnica em informática especializada para clientes da Vila Mury em Volta Redonda."
+      },
+      {
+        "slug": "jardim-paraiba",
+        "name": "Jardim Paraíba",
+        "meta_title": "Assistência Técnica no Jardim Paraíba | Volta Redonda | Nova Techouse",
+        "meta_description": "Conserto de notebook e PC para moradores do Jardim Paraíba em Volta Redonda. Atendimento rápido na Vila Santa Cecília."
+      },
+      {
+        "slug": "monte-castelo",
+        "name": "Monte Castelo",
+        "meta_title": "Conserto de Computadores no Monte Castelo | Volta Redonda | Nova Techouse",
+        "meta_description": "Suporte técnico e manutenção especializada em computadores para o bairro Monte Castelo em Volta Redonda."
+      }
+    ]
+  },
+  {
+    "slug": "resende",
+    "name": "Resende",
+    "meta_title": "Atendimento de Assistência Técnica em Resende - RJ | Nova Techouse",
+    "meta_description": "Assistência técnica especializada atendendo clientes de Resende - RJ. Manutenção de notebooks e PCs com facilidade de contato via WhatsApp.",
+    "footer_blurb": "Atendimento especializado em manutenção de notebooks e PCs para clientes de Resende - RJ.",
+    "neighborhoods": [
+      {
+        "slug": "centro",
+        "name": "Centro",
+        "meta_title": "Assistência Técnica para o Centro de Resende | Nova Techouse",
+        "meta_description": "Serviços especializados de conserto de notebook e PC para moradores e empresas do Centro de Resende - RJ."
+      },
+      {
+        "slug": "campos-eliseos",
+        "name": "Campos Elíseos",
+        "meta_title": "Assistência Técnica para Campos Elíseos | Resende - RJ | Nova Techouse",
+        "meta_description": "Atendimento de suporte e manutenção de computadores para clientes do bairro Campos Elíseos em Resende."
+      },
+      {
+        "slug": "manejo",
+        "name": "Manejo",
+        "meta_title": "Conserto de Notebook para o Manejo | Resende - RJ | Nova Techouse",
+        "meta_description": "Assistência técnica de notebooks e computadores atendendo moradores do bairro Manejo em Resende."
+      },
+      {
+        "slug": "jardim-jalisco",
+        "name": "Jardim Jalisco",
+        "meta_title": "Assistência Técnica para o Jardim Jalisco | Resende | Nova Techouse",
+        "meta_description": "Manutenção de PCs e notebooks para clientes da região do Jardim Jalisco em Resende."
+      },
+      {
+        "slug": "liberdade",
+        "name": "Liberdade",
+        "meta_title": "Conserto de Computadores para a Liberdade | Resende | Nova Techouse",
+        "meta_description": "Suporte técnico e otimização de computadores para moradores do bairro Liberdade em Resende."
+      },
+      {
+        "slug": "paraiso",
+        "name": "Paraíso",
+        "meta_title": "Assistência Técnica para o Paraíso | Resende - RJ | Nova Techouse",
+        "meta_description": "Serviços de informática e reparo de hardware para moradores do bairro Paraíso em Resende."
+      },
+      {
+        "slug": "morada-da-colina",
+        "name": "Morada da Colina",
+        "meta_title": "Assistência Técnica para Morada da Colina | Resende | Nova Techouse",
+        "meta_description": "Conserto de notebooks e computadores atendendo clientes da Morada da Colina em Resende."
+      },
+      {
+        "slug": "jardim-brasilia",
+        "name": "Jardim Brasília",
+        "meta_title": "Manutenção de PCs para o Jardim Brasília | Resende | Nova Techouse",
+        "meta_description": "Assistência técnica em informática atendendo clientes do Jardim Brasília em Resende."
+      },
+      {
+        "slug": "cidade-alegria",
+        "name": "Cidade Alegria",
+        "meta_title": "Assistência Técnica para Cidade Alegria | Resende | Nova Techouse",
+        "meta_description": "Conserto de notebook, formatação e upgrade de SSD para moradores de Cidade Alegria em Resende."
+      },
+      {
+        "slug": "itapuca",
+        "name": "Itapuca",
+        "meta_title": "Conserto de Notebook para Itapuca | Resende - RJ | Nova Techouse",
+        "meta_description": "Serviços de manutenção de computadores e notebooks para moradores de Itapuca em Resende."
+      },
+      {
+        "slug": "toyota",
+        "name": "Toyota",
+        "meta_title": "Assistência Técnica para o Bairro Toyota | Resende | Nova Techouse",
+        "meta_description": "Suporte técnico especializado em notebooks e computadores atendendo o bairro Toyota em Resende."
+      },
+      {
+        "slug": "cabral",
+        "name": "Cabral",
+        "meta_title": "Assistência Técnica para o Cabral | Resende - RJ | Nova Techouse",
+        "meta_description": "Manutenção e conserto de computadores para moradores e negócios do bairro Cabral em Resende."
+      },
+      {
+        "slug": "alvorada",
+        "name": "Alvorada",
+        "meta_title": "Conserto de Computadores para o Alvorada | Resende | Nova Techouse",
+        "meta_description": "Atendimento técnico de informática para clientes do bairro Alvorada em Resende."
+      },
+      {
+        "slug": "monet",
+        "name": "Monet",
+        "meta_title": "Assistência Técnica para o Monet | Resende - RJ | Nova Techouse",
+        "meta_description": "Serviços de manutenção e otimização de computadores para a região do Monet em Resende."
+      },
+      {
+        "slug": "jardim-primavera",
+        "name": "Jardim Primavera",
+        "meta_title": "Assistência Técnica para o Jardim Primavera | Resende | Nova Techouse",
+        "meta_description": "Conserto de notebook, limpeza interna e upgrades para moradores do Jardim Primavera em Resende."
+      }
+    ]
+  }
+]

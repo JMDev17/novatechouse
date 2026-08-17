@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{{headline}} | {{business.name}}</title>
+ <meta name="description" content="{{meta_description}}">
+
+ <!-- Schema Article para SEO -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "{{headline}}",
+ "image": "{{og_image}}",
+ "author": {
+ "@type": "Organization",
+ "name": "{{business.name}}"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "name": "{{business.name}}",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "{{seo.base_url}}/logo.png"
+ }
+ },
+ "datePublished": "{{date_published}}",
+ "description": "{{excerpt}}"
+ }
+ </script>
+
+ <!-- Preconnects -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="dns-prefetch" href="https://esm.sh">
+ <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+ <!-- Fontes async (não bloqueante) -->
+ <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+ <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"></noscript>
+ <link rel="icon" type="image/avif" href="{{branding.favicon}}">
+ <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="bgprimary-texttextmain">
+<div class="noise-overlay"></div>
+
+<!-- NAVBAR -->
+{{navbar}}
+
+<!-- MENU MOBILE -->
+{{mobile_menu}}
+
+<!-- BLOG POST CONTENT -->
+<article class="relative-5">
+ <div class="maxw4xl-mdpx10">
+
+ <!-- Breadcrumbs -->
+ <div class="text-custom-muted flex gs-reveal">
+ <a href="/" class="hovertextwhite-transitioncolors">Home</a>
+ <i data-lucide="chevron-right" class="icon-3"></i>
+ <a href="/{{url_slugs.blog}}/" class="hovertextwhite-transitioncolors">Blog</a>
+ <i data-lucide="chevron-right" class="icon-3"></i>
+ <span class="textaccent">{{breadcrumb_label}}</span>
+ </div>
+
+ <!-- Cabeçalho do Artigo -->
+ <div class="mb10 gs-reveal">
+ <div class="text-xs-2 flex">
+ <span class="btn-outline-2">{{category_label}}</span>
+ <span class="muted">Publicado em {{date_published_display}}</span>
+ </div>
+ <h1 class="heading-5xl-2">
+ {{headline}}
+ </h1>
+ </div>
+
+ <!-- Imagem Destacada -->
+ <div class="card-4 gs-reveal">
+ <picture><source srcset="{{image_avif_post}}" type="image/avif"><img src="{{image_fallback_post}}" alt="{{image_alt}}" class="absolute-4"></picture>
+ </div>
+
+{{body}}
+
+<!-- FOOTER -->
+{{footer}}
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+{{whatsapp_float}}
+
+<script type="module">import{createIcons,Cpu,ChevronDown,ArrowRight,ChevronLeft,ChevronRight,MapPin,Clock,Phone,Smartphone,MessageCircle,MessageSquare,Instagram,Facebook,Navigation,Star,BadgeCheck,ExternalLink,Microscope,ShieldCheck,ArrowLeft,ArrowUpRight}from'https://esm.sh/lucide@latest';createIcons({icons:{Cpu,ChevronDown,ArrowRight,ChevronLeft,ChevronRight,MapPin,Clock,Phone,Smartphone,MessageCircle,MessageSquare,Instagram,Facebook,Navigation,Star,BadgeCheck,ExternalLink,Microscope,ShieldCheck,ArrowLeft,ArrowUpRight}});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script>
+ gsap.registerPlugin(ScrollTrigger);
+ gsap.utils.toArray('.gs-reveal').forEach(function(elem) {
+ gsap.fromTo(elem, { y: 20, opacity: 0 }, {
+ y: 0, opacity: 1, duration: 0.8, ease: "power3.out",
+ scrollTrigger: { trigger: elem, start: "top 90%" }
+ });
+ });
+</script>
+<script>
+// ── Menu Mobile ──────────────────────────────────────────────
+(function () {
+ var btn = document.getElementById('mobile-menu-btn');
+ var menu = document.getElementById('mobile-menu');
+ var hb1 = document.getElementById('hb1');
+ var hb2 = document.getElementById('hb2');
+ var hb3 = document.getElementById('hb3');
+ if (!btn) return;
+ var open = false;
+ function toggle() {
+ open = !open;
+ if (open) {
+ menu.classList.remove('hidden'); menu.classList.add('flex');
+ document.body.style.overflow = 'hidden';
+ hb1.style.transform = 'translateY(7px) rotate(45deg)';
+ hb2.style.opacity = '0';
+ hb3.style.transform = 'translateY(-7px) rotate(-45deg)'; hb3.style.width = '20px';
+ } else {
+ menu.classList.add('hidden'); menu.classList.remove('flex');
+ document.body.style.overflow = '';
+ hb1.style.transform = ''; hb2.style.opacity = ''; hb3.style.transform = ''; hb3.style.width = '';
+ }
+ }
+ btn.addEventListener('click', toggle);
+ menu.querySelectorAll('a.mobile-menu-link').forEach(function(a) { a.addEventListener('click', function() { open = true; toggle(); }); });
+})();
+</script>
+</body>
+</html>

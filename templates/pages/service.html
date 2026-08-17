@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="icon" type="image/avif" href="{{branding.favicon}}">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primary text-textMain antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+  <div class="noise-overlay"></div>
+
+  <!-- NAVBAR -->
+  {{navbar}}
+
+  <!-- MENU MOBILE -->
+  {{mobile_menu}}
+
+  {{body}}
+
+  <!-- FOOTER -->
+  {{footer}}
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  {{whatsapp_float}}
+
+  <script>
+  lucide.createIcons();
+  </script>
+  <script>
+  (function(){var btn=document.getElementById('mobile-menu-btn');var menu=document.getElementById('mobile-menu');var hb1=document.getElementById('hb1');var hb2=document.getElementById('hb2');var hb3=document.getElementById('hb3');if(!btn)return;var open=false;function toggle(){open=!open;if(open){menu.classList.remove('hidden');menu.classList.add('flex');document.body.style.overflow='hidden';hb1.style.transform='translateY(7px) rotate(45deg)';hb2.style.opacity='0';hb3.style.transform='translateY(-7px) rotate(-45deg)';hb3.style.width='20px';}else{menu.classList.add('hidden');menu.classList.remove('flex');document.body.style.overflow='';hb1.style.transform='';hb2.style.opacity='';hb3.style.transform='';hb3.style.width='';}}btn.addEventListener('click',toggle);})();
+  </script>
+</body>
+</html>

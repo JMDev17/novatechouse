@@ -1,0 +1,48 @@
+<header id="navbar" class="fixed top-3 left-1/2 -translate-x-1/2 w-[96%] max-w-6xl z-50 transition-all duration-300 rounded-full px-5 py-2.5 glass-panel flex items-center justify-between">
+  <a href="/" aria-label="{{business.name}} - Página Inicial" class="flex items-center gap-2 cursor-pointer magnetic-btn">
+    <img src="/logo/logo-navbar.avif" alt="{{business.name}}" width="83" height="40" class="h-8 w-auto">
+  </a>
+
+  <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-textMuted" aria-label="Navegação Principal">
+    <a href="/" class="link-hover hover:text-white transition-colors">Início</a>
+    {{#if modules.services}}<div class="relative group">
+      <a href="#servicos" class="link-hover hover:text-white transition-colors flex items-center gap-1">Serviços <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <div class="services-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[460px] max-h-[75vh] overflow-y-auto no-scrollbar bg-[#0D0D12]/98 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 grid grid-cols-2 p-2.5 gap-1 z-50">
+        {{#each services_nav}}<a href="/{{url_slugs.services}}/{{slug}}/" class="px-3 py-2 rounded-xl text-xs text-textMuted hover:bg-white/10 hover:text-white transition-colors flex items-center">{{nav_label}}</a>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+    <a href="#diferenciais" class="link-hover hover:text-white transition-colors">{{labels.differentiators_nav}}</a>
+    {{#if modules.catalog}}<div class="relative group">
+      <a href="#produtos" class="link-hover hover:text-white transition-colors flex items-center gap-1">{{labels.catalog_nav}} <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <div class="absolute top-full left-0 mt-3 w-48 bg-[#0D0D12]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col py-2 z-50">
+        {{#each catalog_nav}}<a href="/{{url_slugs.catalog}}/{{slug}}/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors{{#if @last}}{{else}} border-b border-white/5{{/if}}">{{name}}</a>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+    {{#if modules.areas}}<div class="relative group">
+      <a href="/{{url_slugs.areas}}/" class="link-hover hover:text-white transition-colors flex items-center gap-1">{{labels.areas_nav}} <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <div class="absolute top-full right-0 mt-3 w-48 bg-[#0D0D12]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col py-2 z-50">
+        {{#each areas_regions}}<a href="/{{url_slugs.areas}}/{{slug}}/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors{{#if @last}}{{else}} border-b border-white/5{{/if}}">{{name}}</a>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+    <a href="#contato-info" class="link-hover hover:text-white transition-colors">Contato</a>
+    {{#if modules.blog}}<a href="/{{url_slugs.blog}}/" class="link-hover hover:text-white transition-colors">Blog</a>
+    {{/if}}
+  </nav>
+
+  <div class="flex items-center gap-2">
+    <a href="https://wa.me/{{contact.whatsapp_number}}?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank" rel="noopener noreferrer" class="magnetic-btn bg-accent text-white hover:bg-accent-hover px-4 py-1.5 rounded-full text-xs font-bold transition-colors hidden sm:flex items-center gap-1.5 shadow-md shadow-accent/25">
+      {{labels.header_cta}}
+    </a>
+    <button id="mobile-menu-btn" class="lg:hidden flex flex-col items-center justify-center w-10 h-10 gap-[5px]" aria-label="Menu de navegação">
+      <span class="block w-5 h-[2px] bg-white rounded transition-all duration-300" id="hb1"></span>
+      <span class="block w-5 h-[2px] bg-white rounded transition-all duration-300" id="hb2"></span>
+      <span class="block w-3.5 h-[2px] bg-white rounded transition-all duration-300" id="hb3"></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,42 @@
+<div id="mobile-menu" class="flex-col-8 bg-[#050505]/98 hidden">
+ <div class="flex-col-9 flex">
+ <a href="/" class="heading-base-4 mobile-menu-link">Início</a>
+ {{#if modules.services}}<div class="borderb-borderwhite5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
+ Serviços <i data-lucide="chevron-down" class="icon-4-4"></i>
+ </button>
+ <div class="flex-col-10 hidden flex">
+ {{#each services_nav}}<a href="/{{url_slugs.services}}/{{slug}}/" class="text-sm-muted-9">{{nav_label}}</a>
+ {{/each}}
+ </div>
+ </div>
+ {{/if}}
+ {{#if modules.catalog}}<div class="borderb-borderwhite5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
+ {{labels.catalog_nav}} <i data-lucide="chevron-down" class="icon-4-4"></i>
+ </button>
+ <div class="flex-col-10 hidden flex">
+ {{#each catalog_nav}}<a href="/{{url_slugs.catalog}}/{{slug}}/" class="text-sm-muted-9">{{name}}</a>
+ {{/each}}
+ </div>
+ </div>
+ {{/if}}
+ {{#if modules.areas}}<div class="borderb-borderwhite5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
+ {{labels.areas_nav}} <i data-lucide="chevron-down" class="icon-4-4"></i>
+ </button>
+ <div class="flex-col-10 hidden flex">
+ {{#each areas_regions}}<a href="/{{url_slugs.areas}}/{{slug}}/" class="text-sm-muted-9">{{name}}</a>
+ {{/each}}
+ </div>
+ </div>
+ {{/if}}
+ <a href="/#diferenciais" class="heading-base-4">{{labels.differentiators_nav}}</a>
+ <a href="/#contato-info" class="heading-base-4">Contato</a>
+ {{#if modules.blog}}<a href="/{{url_slugs.blog}}/" class="heading-base-4">Blog</a>
+ {{/if}}
+ <a href="https://wa.me/{{contact.whatsapp_number}}?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-accent-4 flex">
+  Falar no WhatsApp <i data-lucide="arrow-right" class="icon-4"></i>
+ </a>
+ </div>
+</div>

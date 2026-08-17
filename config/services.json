@@ -1,0 +1,338 @@
+[
+  {
+    "slug": "conserto-de-notebook",
+    "nav_label": "Conserto de Notebook",
+    "card_title": "Conserto de Notebook",
+    "card_category": "Notebooks",
+    "footer_group": "col1",
+    "nav_order": 1,
+    "card_order": 1,
+    "footer_order": 1,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1496181133206-80ce9b88a853",
+      "alt": "Conserto de Notebook em Volta Redonda"
+    },
+    "footer_label": "Conserto de Notebook",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Conserto de Notebook em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Assistência técnica especializada em conserto de notebook em Volta Redonda e Resende. Reparos de tela, carcaça, placa-mãe e limpeza térmica.",
+    "footer_blurb": "Assistência técnica especializada em manutenção e conserto de notebooks em Volta Redonda."
+  },
+  {
+    "slug": "conserto-de-computador",
+    "nav_label": "Conserto de Computador",
+    "card_title": "Conserto de Computador",
+    "card_category": "Desktops & PCs",
+    "footer_group": "col1",
+    "nav_order": 2,
+    "card_order": 2,
+    "footer_order": 2,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1588872657578-7efd1f1555ed",
+      "alt": "Conserto de Computador em Volta Redonda"
+    },
+    "footer_label": "Conserto de Computador",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Conserto de Computador em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Manutenção e conserto de computadores de mesa e PCs em Volta Redonda e Resende. Diagnóstico preciso, substituição de peças e reparos técnicos.",
+    "footer_blurb": "Manutenção especializada para computadores e PCs em Volta Redonda e região."
+  },
+  {
+    "slug": "formatacao",
+    "nav_label": "Formatação",
+    "card_title": "Formatação",
+    "card_category": "Sistema Operacional",
+    "footer_group": "col1",
+    "nav_order": 3,
+    "card_order": 3,
+    "footer_order": 3,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1550751827-4bd374c3f58b",
+      "alt": "Formatação de computador em Volta Redonda"
+    },
+    "footer_label": "Formatação",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Formatação de Computadores e Notebooks em Volta Redonda | Nova Techouse",
+    "meta_description": "Serviço profissional de formatação de computadores e notebooks em Volta Redonda e Resende. Restauração do sistema para alto desempenho.",
+    "footer_blurb": "Formatação limpa e otimizada de computadores e notebooks em Volta Redonda."
+  },
+  {
+    "slug": "instalacao-do-windows",
+    "nav_label": "Instalação do Windows",
+    "card_title": "Instalação do Windows",
+    "card_category": "Sistema Operacional",
+    "footer_group": "col1",
+    "nav_order": 4,
+    "card_order": 4,
+    "footer_order": 4,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1629654297299-c8506221ca97",
+      "alt": "Instalação do Windows em Volta Redonda"
+    },
+    "footer_label": "Instalação do Windows",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Instalação do Windows em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Instalação e reconfiguração do Windows em notebooks e computadores em Volta Redonda e Resende. Sistema atualizado com drivers corretos.",
+    "footer_blurb": "Instalação e configuração de sistemas Windows com total estabilidade."
+  },
+  {
+    "slug": "remocao-de-virus",
+    "nav_label": "Remoção de Vírus",
+    "card_title": "Remoção de Vírus",
+    "card_category": "Segurança",
+    "footer_group": "col1",
+    "nav_order": 5,
+    "card_order": 5,
+    "footer_order": 5,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1563986768609-322da13575f3",
+      "alt": "Remoção de vírus e malwares em Volta Redonda"
+    },
+    "footer_label": "Remoção de Vírus",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Remoção de Vírus e Malwares em Volta Redonda | Nova Techouse",
+    "meta_description": "Eliminação de vírus, trojans, adwares e malwares em computadores e notebooks em Volta Redonda e Resende. Proteção e limpeza de sistema.",
+    "footer_blurb": "Remoção completa de ameaças digitais e proteção para seu computador."
+  },
+  {
+    "slug": "limpeza-interna",
+    "nav_label": "Limpeza Interna",
+    "card_title": "Limpeza Interna",
+    "card_category": "Manutenção",
+    "footer_group": "col1",
+    "nav_order": 6,
+    "card_order": 6,
+    "footer_order": 6,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1581092160607-ee22621dd758",
+      "alt": "Limpeza interna de computador em Volta Redonda"
+    },
+    "footer_label": "Limpeza Interna",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Limpeza Interna de Notebook e PC em Volta Redonda | Nova Techouse",
+    "meta_description": "Limpeza interna preventiva e corretiva para notebooks e PCs em Volta Redonda e Resende. Remoção de poeira e desobstrução de coolers.",
+    "footer_blurb": "Desobstrução de coolers e remoção de poeira para evitar superaquecimento."
+  },
+  {
+    "slug": "troca-de-pasta-termica",
+    "nav_label": "Troca de Pasta Térmica",
+    "card_title": "Troca de Pasta Térmica",
+    "card_category": "Manutenção",
+    "footer_group": "col1",
+    "nav_order": 7,
+    "card_order": 7,
+    "footer_order": 7,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1591799264318-7e6ef8ddb7ea",
+      "alt": "Troca de pasta térmica em Volta Redonda"
+    },
+    "footer_label": "Troca de Pasta Térmica",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Troca de Pasta Térmica para Notebook e PC em Volta Redonda | Nova Techouse",
+    "meta_description": "Substituição de pasta térmica ressecada por compostos de alta condutividade em Volta Redonda e Resende. Redução de temperatura e ruído.",
+    "footer_blurb": "Aplicação de pasta térmica de alta condutividade para controle de temperatura."
+  },
+  {
+    "slug": "upgrade-de-ssd",
+    "nav_label": "Upgrade de SSD",
+    "card_title": "Upgrade de SSD",
+    "card_category": "Performance",
+    "footer_group": "col1",
+    "nav_order": 8,
+    "card_order": 8,
+    "footer_order": 8,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1544652478-6653e09f18a2",
+      "alt": "Upgrade de SSD em Volta Redonda"
+    },
+    "footer_label": "Upgrade de SSD",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Upgrade de SSD em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Aumente a velocidade do seu notebook ou PC em até 10x com upgrade de SSD em Volta Redonda e Resende. Instalação rápida e migração de sistema.",
+    "footer_blurb": "Substituição de HD antigo por SSD para velocidade máxima de inicialização."
+  },
+  {
+    "slug": "upgrade-de-memoria-ram",
+    "nav_label": "Upgrade de Memória RAM",
+    "card_title": "Upgrade de Memória RAM",
+    "card_category": "Performance",
+    "footer_group": "col2",
+    "nav_order": 9,
+    "card_order": 9,
+    "footer_order": 1,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1562976540-1502c2145186",
+      "alt": "Upgrade de Memória RAM em Volta Redonda"
+    },
+    "footer_label": "Upgrade de RAM",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Upgrade de Memória RAM em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Expansão de memória RAM para notebooks e computadores em Volta Redonda e Resende. Elimine travamentos e trabalhe com mais agilidade.",
+    "footer_blurb": "Aumento da capacidade de memória RAM para navegação e programas pesados sem travamentos."
+  },
+  {
+    "slug": "troca-de-hd",
+    "nav_label": "Troca de HD",
+    "card_title": "Troca de HD",
+    "card_category": "Armazenamento",
+    "footer_group": "col2",
+    "nav_order": 10,
+    "card_order": 10,
+    "footer_order": 2,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1531492746076-161ca9bcad58",
+      "alt": "Troca de HD em Volta Redonda"
+    },
+    "footer_label": "Troca de HD",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Troca de HD para Notebook e PC em Volta Redonda | Nova Techouse",
+    "meta_description": "Substituição de HD com defeito, ruído ou lentidão em Volta Redonda e Resende. Troca segura por novas unidades de armazenamento.",
+    "footer_blurb": "Substituição de discos rígidos danificados para restaurar a confiabilidade do sistema."
+  },
+  {
+    "slug": "reparo-de-placa-mae",
+    "nav_label": "Reparo de Placa-Mãe",
+    "card_title": "Reparo de Placa-Mãe",
+    "card_category": "Laboratório Avançado",
+    "footer_group": "col2",
+    "nav_order": 11,
+    "card_order": 11,
+    "footer_order": 3,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1518770660439-4636190af475",
+      "alt": "Reparo de placa-mãe em Volta Redonda"
+    },
+    "footer_label": "Reparo de Placa-Mãe",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Reparo de Placa-Mãe em Volta Redonda - RJ | Nova Techouse",
+    "meta_description": "Manutenção eletrônica e reparo de placa-mãe de notebooks e PCs em Volta Redonda e Resende. Recuperação de equipamentos em curto ou que não ligam.",
+    "footer_blurb": "Diagnóstico eletrônico e conserto avançado de circuitos em placas-mãe."
+  },
+  {
+    "slug": "recuperacao-de-dados",
+    "nav_label": "Recuperação de Dados",
+    "card_title": "Recuperação de Dados",
+    "card_category": "Dados & Arquivos",
+    "footer_group": "col2",
+    "nav_order": 12,
+    "card_order": 12,
+    "footer_order": 4,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1558494949-ef010cbdcc31",
+      "alt": "Recuperação de dados em Volta Redonda"
+    },
+    "footer_label": "Recuperação de Dados",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Recuperação de Dados de HD e SSD em Volta Redonda | Nova Techouse",
+    "meta_description": "Recuperação de arquivos, fotos e documentos de HDs e SSDs danificados ou formatados em Volta Redonda e Resende.",
+    "footer_blurb": "Recuperação especializada de arquivos e dados em dispositivos com falhas."
+  },
+  {
+    "slug": "backup",
+    "nav_label": "Backup",
+    "card_title": "Backup",
+    "card_category": "Dados & Arquivos",
+    "footer_group": "col2",
+    "nav_order": 13,
+    "card_order": 13,
+    "footer_order": 5,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1544716278-ca5e3f4abd8c",
+      "alt": "Backup de arquivos em Volta Redonda"
+    },
+    "footer_label": "Backup",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Backup de Arquivos e Dados em Volta Redonda | Nova Techouse",
+    "meta_description": "Serviço de backup preventivo de dados para computadores e notebooks em Volta Redonda e Resende. Cópia segura de arquivos pessoais e profissionais.",
+    "footer_blurb": "Organização e cópia de segurança preventiva para proteger suas informações."
+  },
+  {
+    "slug": "instalacao-de-drivers",
+    "nav_label": "Instalação de Drivers",
+    "card_title": "Instalação de Drivers",
+    "card_category": "Software",
+    "footer_group": "col2",
+    "nav_order": 14,
+    "card_order": 14,
+    "footer_order": 6,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1526374965328-7f61d4dc18c5",
+      "alt": "Instalação de drivers em Volta Redonda"
+    },
+    "footer_label": "Instalação de Drivers",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Instalação e Atualização de Drivers em Volta Redonda | Nova Techouse",
+    "meta_description": "Instalação e atualização de drivers de vídeo, áudio, rede e periféricos em Volta Redonda e Resende. Solução para incompatividades do sistema.",
+    "footer_blurb": "Configuração de drivers oficiais para correto funcionamento dos periféricos."
+  },
+  {
+    "slug": "otimizacao-de-computador",
+    "nav_label": "Otimização de Computador",
+    "card_title": "Otimização de Computador",
+    "card_category": "Performance",
+    "footer_group": "col2",
+    "nav_order": 15,
+    "card_order": 15,
+    "footer_order": 7,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1551288049-bebda4e38f71",
+      "alt": "Otimização de computador em Volta Redonda"
+    },
+    "footer_label": "Otimização de Computador",
+    "show_in_compact_mobile_menu": false,
+    "meta_title": "Otimização de Computadores e Notebooks em Volta Redonda | Nova Techouse",
+    "meta_description": "Serviço de otimização de sistema para acelerar notebooks e computadores lentos em Volta Redonda e Resende. Ajustes finos e remoção de gargalos.",
+    "footer_blurb": "Ajuste fino de software para máxima rapidez no uso cotidiano."
+  },
+  {
+    "slug": "manutencao-preventiva",
+    "nav_label": "Manutenção Preventiva",
+    "card_title": "Manutenção Preventiva",
+    "card_category": "Manutenção",
+    "footer_group": "col2",
+    "nav_order": 16,
+    "card_order": 16,
+    "footer_order": 8,
+    "image": {
+      "type": "unsplash",
+      "type_is_local": false,
+      "id": "1581092335397-9583fe92d232",
+      "alt": "Manutenção preventiva em Volta Redonda"
+    },
+    "footer_label": "Manutenção Preventiva",
+    "show_in_compact_mobile_menu": true,
+    "meta_title": "Manutenção Preventiva para Notebook e PC em Volta Redonda | Nova Techouse",
+    "meta_description": "Manutenção preventiva completa para notebooks e computadores em Volta Redonda e Resende. Evite falhas graves e estenda a vida útil da sua máquina.",
+    "footer_blurb": "Revisão preventiva periódica de hardware e software para maior vida útil do PC."
+  }
+]

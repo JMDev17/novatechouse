@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{{meta_title}}</title>
+ <meta name="description" content="{{meta_description}}">
+ <!-- Preconnects -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="dns-prefetch" href="https://esm.sh">
+ <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+ <!-- Fontes async (não bloqueante) -->
+ <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+ <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"></noscript>
+ <link rel="icon" type="image/avif" href="{{branding.favicon}}">
+ <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bgprimary-texttextmain">
+<div class="noise-overlay"></div>
+
+<!-- NAVBAR -->
+{{navbar}}
+
+<!-- MENU MOBILE -->
+{{mobile_menu}}
+
+<!-- BLOG HERO & SEARCH -->
+<section class="blog-hero">
+ <div class="absolute"></div>
+ <div class="relative">
+ <div class="textcenter-maxw2xl gs-reveal">
+ <h1 class="heading-5xl">
+ O Blog da <span class="text-gradient-accent">{{business.name}}</span>
+ </h1>
+ <p class="text-base-muted">
+ Dicas, novidades e informações detalhadas para você aproveitar ao máximo.
+ </p>
+
+ <div class="relative-2">
+ <div class="absolute-2 flex">
+ <i data-lucide="search" class="icon-5"></i>
+ </div>
+ <input id="blog-search" type="text" class="card" placeholder="Buscar artigos...">
+ <button id="search-btn" class="btn-light">
+ Buscar
+ </button>
+ </div>
+ </div>
+
+ <!-- CATEGORIAS -->
+ <div class="flex-center flex gs-reveal">
+ <button data-cat="todos" class="btn-accent cat-btn">Todos</button>
+ {{#each blog_categories}}<button data-cat="{{tag}}" class="btn-outline cat-btn">{{label}}</button>
+ {{/each}}
+ </div>
+ </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="relative-3">
+ <div class="maxw7xl-mdpx10">
+
+ <div id="blog-grid" class="grid-2col">
+
+ {{#each blog_posts}}<!-- Artigo -->
+ <a href="/{{url_slugs.blog}}/{{slug}}/"
+  data-categorias="{{data_categorias}}"
+  data-search="{{data_search}}"
+  class="card-2 blog-card glass-panel group gs-reveal-card flex">
+ <div class="relative-4">
+ <picture><source srcset="{{image_avif_blog}}" type="image/avif"><img src="{{image_fallback_blog}}" alt="{{image_alt}}" class="objectcover-transitiontransform group-hover:scale-105"></picture>
+ <div class="absolute-3"></div>
+ </div>
+ <div class="flex-col flex">
+ <div class="text-custom flex">
+ <span class="btn-outline-2">{{category_label}}</span>
+ <span class="muted">Atualizado recentemente</span>
+ </div>
+ <h2 class="heading-lg group-hover:text-accent">{{headline}}</h2>
+ <p class="text-sm-muted">{{excerpt}}</p>
+ <span class="text-xs flex group-hover:gap-2">Ler artigo completo <i data-lucide="arrow-right" class="icon-3"></i></span>
+ </div>
+ </a>
+
+ {{/each}}
+ </div>
+
+ <!-- ESTADO VAZIO -->
+ <div id="no-results" class="textcenter hidden">
+ <div class="card-3 flex">
+ <i data-lucide="search-x" class="icon-7"></i>
+ </div>
+ <h3 class="heading-lg-2">Nenhum artigo encontrado</h3>
+ <p class="text-sm-muted-2">Tente buscar por outro termo ou selecionar uma categoria diferente.</p>
+ <button onclick="resetFiltros()" class="btn-outline-3">Ver todos os artigos</button>
+ </div>
+
+ <!-- PAGINAÇÃO -->
+ <div id="pagination" class="justifycenter-gap2 flex gs-reveal"></div>
+
+ </div>
+</section>
+
+<!-- FOOTER -->
+{{footer}}
+
+<script type="module">import{createIcons,Cpu,ChevronDown,ArrowRight,ChevronLeft,ChevronRight,MapPin,Clock,Phone,Smartphone,MessageCircle,MessageSquare,Instagram,Facebook,Navigation,Star,BadgeCheck,ExternalLink,Microscope,ShieldCheck,ArrowLeft,Search,SearchX}from'https://esm.sh/lucide@latest';createIcons({icons:{Cpu,ChevronDown,ArrowRight,ChevronLeft,ChevronRight,MapPin,Clock,Phone,Smartphone,MessageCircle,MessageSquare,Instagram,Facebook,Navigation,Star,BadgeCheck,ExternalLink,Microscope,ShieldCheck,ArrowLeft,Search,SearchX}});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script>
+ gsap.registerPlugin(ScrollTrigger);
+ gsap.utils.toArray('.gs-reveal').forEach(function(el) {
+ gsap.fromTo(el, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 85%" } });
+ });
+
+ // ─── Estado ───────────────────────────────────────────
+ const ITEMS_PER_PAGE = 6;
+ let activeCat = 'todos';
+ let searchTerm = '';
+ let currentPage = 1;
+
+ const allCards = Array.from(document.querySelectorAll('.blog-card'));
+ const noResults = document.getElementById('no-results');
+ const paginationEl = document.getElementById('pagination');
+
+ // ─── Normalização ─────────────────────────────────────
+ function norm(str) {
+ return str.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+ }
+
+ // ─── Filtro ───────────────────────────────────────────
+ function getFiltered() {
+ return allCards.filter(function(card) {
+ var cats = card.dataset.categorias || '';
+ var search = card.dataset.search || '';
+ var title = norm(card.querySelector('h2') ? card.querySelector('h2').textContent : '');
+
+ var catOk = activeCat === 'todos' || cats.split(' ').indexOf(activeCat) !== -1;
+ var searchOk = !searchTerm || norm(search).indexOf(norm(searchTerm)) !== -1 || title.indexOf(norm(searchTerm)) !== -1;
+
+ return catOk && searchOk;
+ });
+ }
+
+ // ─── Renderização ─────────────────────────────────────
+ function render() {
+ var filtered = getFiltered();
+ var total = filtered.length;
+ var totalPages = Math.max(1, Math.ceil(total / ITEMS_PER_PAGE));
+
+ if (currentPage > totalPages) currentPage = 1;
+
+ var start = (currentPage - 1) * ITEMS_PER_PAGE;
+ var pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
+
+ allCards.forEach(function(c) { c.classList.add('hidden'); });
+ pageItems.forEach(function(c) { c.classList.remove('hidden'); });
+
+ noResults.classList.toggle('hidden', total > 0);
+
+ renderPagination(total, totalPages);
+ }
+
+ // ─── Paginação ────────────────────────────────────────
+ function renderPagination(total, totalPages) {
+ paginationEl.innerHTML = '';
+ if (totalPages <= 1) return;
+
+ // Botão anterior
+ var prev = document.createElement('button');
+ prev.innerHTML = '<i data-lucide="chevron-left" class="icon-4"></i>';
+ prev.className = 'w-10 h-10 rounded-full flex items-center justify-center border border-white/10 transition-colors ' +
+ (currentPage === 1 ? 'bg-white/5 text-gray-600 cursor-not-allowed' : 'bg-surface hover:bg-white/10 text-white cursor-pointer');
+ if (currentPage > 1) {
+ prev.onclick = function() { currentPage--; render(); window.scrollTo({ top: 400, behavior: 'smooth' }); };
+ }
+ paginationEl.appendChild(prev);
+
+ // Botões numerados
+ for (var i = 1; i <= totalPages; i++) {
+ (function(page) {
+ var btn = document.createElement('button');
+ btn.textContent = page;
+ btn.className = 'w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-colors ' +
+ (page === currentPage ? 'bg-accent text-white' : 'border border-white/10 bg-surface hover:bg-white/10 text-white cursor-pointer');
+ btn.onclick = function() { currentPage = page; render(); window.scrollTo({ top: 400, behavior: 'smooth' }); };
+ paginationEl.appendChild(btn);
+ })(i);
+ }
+
+ // Botão próximo
+ var next = document.createElement('button');
+ next.innerHTML = '<i data-lucide="chevron-right" class="icon-4"></i>';
+ next.className = 'w-10 h-10 rounded-full flex items-center justify-center border border-white/10 transition-colors ' +
+ (currentPage === totalPages ? 'bg-white/5 text-gray-600 cursor-not-allowed' : 'bg-surface hover:bg-white/10 text-white cursor-pointer');
+ if (currentPage < totalPages) {
+ next.onclick = function() { currentPage++; render(); window.scrollTo({ top: 400, behavior: 'smooth' }); };
+ }
+ paginationEl.appendChild(next);
+
+ lucide.createIcons();
+ }
+
+ // ─── Categorias ───────────────────────────────────────
+ document.querySelectorAll('.cat-btn').forEach(function(btn) {
+ btn.addEventListener('click', function() {
+ activeCat = btn.dataset.cat;
+ currentPage = 1;
+
+ document.querySelectorAll('.cat-btn').forEach(function(b) {
+ b.className = 'cat-btn px-4 py-1.5 rounded-full bg-surface border border-white/10 text-textMuted hover:text-white hover:border-white/30 text-xs font-semibold transition-colors';
+ });
+ btn.className = 'cat-btn px-4 py-1.5 rounded-full bg-accent text-white text-xs font-bold transition-colors';
+
+ render();
+ });
+ });
+
+ // ─── Busca ────────────────────────────────────────────
+ var searchInput = document.getElementById('blog-search');
+ var searchButton = document.getElementById('search-btn');
+
+ function doSearch() {
+ searchTerm = searchInput.value;
+ currentPage = 1;
+ render();
+ }
+
+ searchButton.addEventListener('click', doSearch);
+ searchInput.addEventListener('keydown', function(e) {
+ if (e.key === 'Enter') doSearch();
+ });
+ searchInput.addEventListener('input', function() {
+ searchTerm = searchInput.value;
+ currentPage = 1;
+ render();
+ });
+
+ // ─── Reset ────────────────────────────────────────────
+ function resetFiltros() {
+ activeCat = 'todos';
+ searchTerm = '';
+ currentPage = 1;
+ searchInput.value = '';
+ document.querySelectorAll('.cat-btn').forEach(function(b) {
+ b.className = 'cat-btn px-4 py-1.5 rounded-full bg-surface border border-white/10 text-textMuted hover:text-white hover:border-white/30 text-xs font-semibold transition-colors';
+ });
+ document.querySelector('[data-cat="todos"]').className = 'cat-btn px-4 py-1.5 rounded-full bg-accent text-white text-xs font-bold transition-colors';
+ render();
+ }
+
+ // ─── Init ─────────────────────────────────────────────
+ render();
+</script>
+<script>
+// ── Menu Mobile ──────────────────────────────────────────────
+(function () {
+ var btn = document.getElementById('mobile-menu-btn');
+ var menu = document.getElementById('mobile-menu');
+ var hb1 = document.getElementById('hb1');
+ var hb2 = document.getElementById('hb2');
+ var hb3 = document.getElementById('hb3');
+ if (!btn) return;
+ var open = false;
+ function toggle() {
+ open = !open;
+ if (open) {
+ menu.classList.remove('hidden'); menu.classList.add('flex');
+ document.body.style.overflow = 'hidden';
+ hb1.style.transform = 'translateY(7px) rotate(45deg)';
+ hb2.style.opacity = '0';
+ hb3.style.transform = 'translateY(-7px) rotate(-45deg)'; hb3.style.width = '20px';
+ } else {
+ menu.classList.add('hidden'); menu.classList.remove('flex');
+ document.body.style.overflow = '';
+ hb1.style.transform = ''; hb2.style.opacity = ''; hb3.style.transform = ''; hb3.style.width = '';
+ }
+ }
+ btn.addEventListener('click', toggle);
+ menu.querySelectorAll('a.mobile-menu-link').forEach(function(a) { a.addEventListener('click', function() { open = true; toggle(); }); });
+})();
+</script>
+</body>
+</html>
