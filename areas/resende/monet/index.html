@@ -50,7 +50,7 @@
     <a href="/#diferenciais" class="link-hover hover:text-white transition-colors">Diferenciais</a>
     
     <div class="relative group">
-      <a href="/areas/" class="link-hover hover:text-white transition-colors flex items-center gap-1">Regiões Atendidas <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <a href="/areas/" class="link-hover hover:text-white transition-colors flex items-center gap-1">Como Chegar <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
       <div class="absolute top-full right-0 mt-3 w-48 bg-[#0D0D12]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col py-2 z-50">
         <a href="/areas/volta-redonda/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors border-b border-white/5">Volta Redonda</a>
         <a href="/areas/resende/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors">Resende</a>
@@ -75,81 +75,81 @@
 
 
   <!-- MENU MOBILE -->
-  <div id="mobile-menu" class="flex-col-8 bg-[#050505]/98 hidden">
- <div class="flex-col-9 flex">
- <a href="/" class="heading-base-4 mobile-menu-link">Início</a>
- <div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- Serviços <i data-lucide="chevron-down" class="icon-4-4"></i>
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#0D0D12]/95 backdrop-blur-xl flex-col pt-24 px-6 pb-10 overflow-y-auto hidden lg:hidden">
+ <div class="flex flex-col">
+ <a href="/" class="py-4 text-base font-display font-bold text-white border-b border-white/5 mobile-menu-link">Início</a>
+ <div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ Serviços <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- <a href="/servicos/conserto-de-notebook/" class="text-sm-muted-8">Conserto de Notebook</a>
- <a href="/servicos/conserto-de-computador/" class="text-sm-muted-8">Conserto de Computador</a>
- <a href="/servicos/formatacao/" class="text-sm-muted-8">Formatação</a>
- <a href="/servicos/instalacao-do-windows/" class="text-sm-muted-8">Instalação do Windows</a>
- <a href="/servicos/limpeza-interna/" class="text-sm-muted-8">Limpeza Interna</a>
- <a href="/servicos/upgrade-de-ssd/" class="text-sm-muted-8">Upgrade de SSD</a>
- <a href="/servicos/reparo-de-placa-mae/" class="text-sm-muted-8">Reparo de Placa-Mãe</a>
- <a href="/servicos/manutencao-preventiva/" class="text-sm-muted-8">Manutenção Preventiva</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ <a href="/servicos/conserto-de-notebook/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Conserto de Notebook</a>
+ <a href="/servicos/conserto-de-computador/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Conserto de Computador</a>
+ <a href="/servicos/formatacao/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Formatação</a>
+ <a href="/servicos/instalacao-do-windows/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Instalação do Windows</a>
+ <a href="/servicos/limpeza-interna/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Limpeza Interna</a>
+ <a href="/servicos/upgrade-de-ssd/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Upgrade de SSD</a>
+ <a href="/servicos/reparo-de-placa-mae/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Reparo de Placa-Mãe</a>
+ <a href="/servicos/manutencao-preventiva/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Manutenção Preventiva</a>
  
  </div>
  </div>
  
- <div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- Regiões Atendidas <i data-lucide="chevron-down" class="icon-4-4"></i>
+ <div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ Como Chegar <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- <a href="/areas/volta-redonda/" class="text-sm-muted-8">Volta Redonda</a>
- <a href="/areas/resende/" class="text-sm-muted-8">Resende</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ <a href="/areas/volta-redonda/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Volta Redonda</a>
+ <a href="/areas/resende/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Resende</a>
  
  </div>
  </div>
  
  
- <a href="/" class="heading-base-4">Home</a>
- <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-accent-4 flex">
- Falar no WhatsApp <i data-lucide="arrow-right" class="icon-4"></i>
+ <a href="/" class="py-4 text-base font-display font-bold text-white border-b border-white/5">Home</a>
+ <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="mt-6 bg-accent text-white px-5 py-3.5 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-accent-hover transition-colors">
+ Falar no WhatsApp <i data-lucide="arrow-right" class="w-4 h-4"></i>
  </a>
  </div>
 </div>
 
 
   <!-- HEADER SEO -->
-<section class="relative-19 hero-bg">
-<div class="flex-col-center-5 flex">
-<h1 class="heading-5xl-3">
+<section class="relative w-full pt-32 pb-10 px-6 md:px-12 lg:px-24 hero-bg text-center">
+<div class="max-w-4xl mx-auto flex flex-col items-center gap-4">
+<h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold tracking-tighter leading-[1.1] text-white">
 Assistência Técnica para Monet em Resende - RJ
 </h1>
-<p class="text-lg-muted">
+<p class="text-lg text-textMuted max-w-2xl font-light leading-relaxed mt-2">
 Atendimento de assistência técnica especializada em notebooks e computadores para moradores e empresas do bairro Monet em Resende - RJ.
 </p>
 </div>
 </section>
 
 <!-- CONTENT -->
-<section class="relative-25">
-<div class="maxw4xl-mdpx12-2">
+<section class="py-12 relative">
+<div class="max-w-4xl mx-auto px-6 md:px-12">
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Suporte técnico de informática para a região do Monet em Resende</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Suporte técnico de informática para a região do Monet em Resende</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 A <strong>Nova Techouse</strong> presta atendimento especializado para clientes localizados no bairro Monet, em Resende - RJ.
 </p>
-<p class="text-lg-muted-3">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Oferecemos soluções de qualidade para quem necessita de substituição de pasta térmica ressecada e desobstrução de coolers. Nossos técnicos avaliam detalhadamente cada equipamento para determinar a solução mais eficiente e segura.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Nossa sede física está localizada na Vila Santa Cecília, em Volta Redonda - RJ, e atendemos com total dedicação os clientes de Resende que buscam um serviço confiável de manutenção.
 </p>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Principais serviços disponíveis para clientes de Resende</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Principais serviços disponíveis para clientes de Resende</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Moradores do bairro Monet encontram na Nova Techouse suporte completo para diversas demandas de hardware e software:
 </p>
-<ul class="text-base-muted-3 space-y-2 mb6">
+<ul class="text-textMuted leading-relaxed text-lg space-y-2 mb-6">
 <li>• <strong>Conserto de Notebook:</strong> Diagnósticos de tela, teclado, bateria e reparo de carcaça.</li>
 <li>• <strong>Conserto de Computador:</strong> Reparos em desktops de escritório e computadores pessoais.</li>
 <li>• <strong>Upgrade de SSD & Memória RAM:</strong> Aceleramento expressivo de leitura e capacidade multitarefa.</li>
@@ -158,33 +158,33 @@ Moradores do bairro Monet encontram na Nova Techouse suporte completo para diver
 </ul>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Atendimento ágil via WhatsApp</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Atendimento ágil via WhatsApp</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Você pode esclarecer suas dúvidas sobre o funcionamento do seu equipamento diretamente com nossa equipe de suporte.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Oferecemos orientação clara e transparente antes da realização de qualquer manutenção.
 </p>
 </div>
 
-<div class="flex flex mt8 mb8">
-<a href="/areas/resende/" class="text-sm-7">Voltar para Atendimento em Resende</a>
-<span class="textwhite20">|</span>
-<a href="/areas/" class="text-sm-7">Regiões Atendidas</a>
+<div class="flex items-center gap-4 mt-8 mb-8">
+<a href="/areas/resende/" class="text-accent hover:underline text-sm font-semibold">Voltar para Atendimento em Resende</a>
+<span class="text-white/20">|</span>
+<a href="/areas/" class="text-accent hover:underline text-sm font-semibold">Como Chegar</a>
 </div>
 
 </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="relative-28 hero-bg">
-<div class="maxw3xl">
-<h2 class="heading-4xl-2">Mora no Monet em Resende e precisa de ajuda técnica?</h2>
-<p class="text-lg-muted-5">Converse com a equipe da Nova Techouse pelo WhatsApp para tirar dúvidas sobre seu computador ou notebook.</p>
-<div class="flex-col-center-6 flex">
-<a href="https://wa.me/5524999294213?text=Olá! Vim pelo site da Nova Techouse. Sou do bairro Monet em Resende e preciso de assistência técnica." class="btn-cta-lg magnetic-btn flex">
-<i data-lucide="message-square" class="icon-4"></i> Falar no WhatsApp
+<section class="py-24 relative border-t border-accent/20 hero-bg text-center">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-4xl font-display font-bold mb-6 text-white">Mora no Monet em Resende e precisa de ajuda técnica?</h2>
+<p class="text-textMuted text-base mb-8">Converse com a equipe da Nova Techouse pelo WhatsApp para tirar dúvidas sobre seu computador ou notebook.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="https://wa.me/5524999294213?text=Olá! Vim pelo site da Nova Techouse. Sou do bairro Monet em Resende e preciso de assistência técnica." class="magnetic-btn w-full sm:w-auto bg-accent text-white px-8 py-4 rounded-full text-sm font-bold flex items-center justify-center gap-2 hover:bg-accent-hover transition-all shadow-lg shadow-accent/25">
+<i data-lucide="message-square" class="w-4 h-4"></i> Falar no WhatsApp
 </a>
 </div>
 </div>
@@ -214,7 +214,7 @@ Oferecemos orientação clara e transparente antes da realização de qualquer m
           <li><a href="/" class="hover:text-accent transition-colors">Início</a></li>
           <li><a href="/#servicos" class="hover:text-accent transition-colors">Serviços</a></li>
           
-          <li><a href="/areas/" class="hover:text-accent transition-colors">Regiões Atendidas</a></li>
+          <li><a href="/areas/" class="hover:text-accent transition-colors">Como Chegar</a></li>
           
         </ul>
       </div>

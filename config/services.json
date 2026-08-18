@@ -30,9 +30,10 @@
     "card_order": 2,
     "footer_order": 2,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1588872657578-7efd1f1555ed",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/conserto-de-computador.avif",
+      "fallback": "/fotos/conserto-de-computador.jpg",
       "alt": "Conserto de Computador em Volta Redonda"
     },
     "footer_label": "Conserto de Computador",
@@ -51,9 +52,10 @@
     "card_order": 3,
     "footer_order": 3,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1550751827-4bd374c3f58b",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/formatacao.avif",
+      "fallback": "/fotos/formatacao.jpg",
       "alt": "Formatação de computador em Volta Redonda"
     },
     "footer_label": "Formatação",
@@ -72,9 +74,10 @@
     "card_order": 4,
     "footer_order": 4,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1629654297299-c8506221ca97",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/instalacao-do-windows.avif",
+      "fallback": "/fotos/instalacao-do-windows.jpg",
       "alt": "Instalação do Windows em Volta Redonda"
     },
     "footer_label": "Instalação do Windows",
@@ -93,9 +96,10 @@
     "card_order": 5,
     "footer_order": 5,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1563986768609-322da13575f3",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/remocao-de-virus.avif",
+      "fallback": "/fotos/remocao-de-virus.jpg",
       "alt": "Remoção de vírus e malwares em Volta Redonda"
     },
     "footer_label": "Remoção de Vírus",
@@ -114,9 +118,10 @@
     "card_order": 6,
     "footer_order": 6,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1581092160607-ee22621dd758",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/limpeza-interna.avif",
+      "fallback": "/fotos/limpeza-interna.jpg",
       "alt": "Limpeza interna de computador em Volta Redonda"
     },
     "footer_label": "Limpeza Interna",
@@ -156,9 +161,10 @@
     "card_order": 8,
     "footer_order": 8,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1544652478-6653e09f18a2",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/upgrade-de-ssd.avif",
+      "fallback": "/fotos/upgrade-de-ssd.jpg",
       "alt": "Upgrade de SSD em Volta Redonda"
     },
     "footer_label": "Upgrade de SSD",
@@ -198,9 +204,10 @@
     "card_order": 10,
     "footer_order": 2,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1531492746076-161ca9bcad58",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/troca-de-hd.avif",
+      "fallback": "/fotos/troca-de-hd.jpg",
       "alt": "Troca de HD em Volta Redonda"
     },
     "footer_label": "Troca de HD",
@@ -219,9 +226,10 @@
     "card_order": 11,
     "footer_order": 3,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1518770660439-4636190af475",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/reparo-de-placa-mae.avif",
+      "fallback": "/fotos/reparo-de-placa-mae.jpg",
       "alt": "Reparo de placa-mãe em Volta Redonda"
     },
     "footer_label": "Reparo de Placa-Mãe",
@@ -240,9 +248,10 @@
     "card_order": 12,
     "footer_order": 4,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1558494949-ef010cbdcc31",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/recuperacao-de-dados.avif",
+      "fallback": "/fotos/recuperacao-de-dados.jpg",
       "alt": "Recuperação de dados em Volta Redonda"
     },
     "footer_label": "Recuperação de Dados",
@@ -261,9 +270,10 @@
     "card_order": 13,
     "footer_order": 5,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1544716278-ca5e3f4abd8c",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/backup.avif",
+      "fallback": "/fotos/backup.jpg",
       "alt": "Backup de arquivos em Volta Redonda"
     },
     "footer_label": "Backup",
@@ -282,9 +292,10 @@
     "card_order": 14,
     "footer_order": 6,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1526374965328-7f61d4dc18c5",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/instalacao-de-drivers.avif",
+      "fallback": "/fotos/instalacao-de-drivers.jpg",
       "alt": "Instalação de drivers em Volta Redonda"
     },
     "footer_label": "Instalação de Drivers",
@@ -324,9 +335,10 @@
     "card_order": 16,
     "footer_order": 8,
     "image": {
-      "type": "unsplash",
-      "type_is_local": false,
-      "id": "1581092335397-9583fe92d232",
+      "type": "local",
+      "type_is_local": true,
+      "avif": "/fotos/manutencao-preventiva.avif",
+      "fallback": "/fotos/manutencao-preventiva.jpg",
       "alt": "Manutenção preventiva em Volta Redonda"
     },
     "footer_label": "Manutenção Preventiva",

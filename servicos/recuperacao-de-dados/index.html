@@ -50,7 +50,7 @@
     <a href="/#diferenciais" class="link-hover hover:text-white transition-colors">Diferenciais</a>
     
     <div class="relative group">
-      <a href="/areas/" class="link-hover hover:text-white transition-colors flex items-center gap-1">Regiões Atendidas <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+      <a href="/areas/" class="link-hover hover:text-white transition-colors flex items-center gap-1">Como Chegar <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
       <div class="absolute top-full right-0 mt-3 w-48 bg-[#0D0D12]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col py-2 z-50">
         <a href="/areas/volta-redonda/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors border-b border-white/5">Volta Redonda</a>
         <a href="/areas/resende/" class="px-4 py-2 text-xs text-textMuted hover:bg-white/5 hover:text-white transition-colors">Resende</a>
@@ -75,51 +75,51 @@
 
 
   <!-- MENU MOBILE -->
-  <div id="mobile-menu" class="flex-col-8 bg-[#050505]/98 hidden">
- <div class="flex-col-9 flex">
- <a href="/" class="heading-base-4 mobile-menu-link">Início</a>
- <div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- Serviços <i data-lucide="chevron-down" class="icon-4-4"></i>
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#0D0D12]/95 backdrop-blur-xl flex-col pt-24 px-6 pb-10 overflow-y-auto hidden lg:hidden">
+ <div class="flex flex-col">
+ <a href="/" class="py-4 text-base font-display font-bold text-white border-b border-white/5 mobile-menu-link">Início</a>
+ <div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ Serviços <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- <a href="/servicos/conserto-de-notebook/" class="text-sm-muted-9">Conserto de Notebook</a>
- <a href="/servicos/conserto-de-computador/" class="text-sm-muted-9">Conserto de Computador</a>
- <a href="/servicos/formatacao/" class="text-sm-muted-9">Formatação</a>
- <a href="/servicos/instalacao-do-windows/" class="text-sm-muted-9">Instalação do Windows</a>
- <a href="/servicos/remocao-de-virus/" class="text-sm-muted-9">Remoção de Vírus</a>
- <a href="/servicos/limpeza-interna/" class="text-sm-muted-9">Limpeza Interna</a>
- <a href="/servicos/troca-de-pasta-termica/" class="text-sm-muted-9">Troca de Pasta Térmica</a>
- <a href="/servicos/upgrade-de-ssd/" class="text-sm-muted-9">Upgrade de SSD</a>
- <a href="/servicos/upgrade-de-memoria-ram/" class="text-sm-muted-9">Upgrade de Memória RAM</a>
- <a href="/servicos/troca-de-hd/" class="text-sm-muted-9">Troca de HD</a>
- <a href="/servicos/reparo-de-placa-mae/" class="text-sm-muted-9">Reparo de Placa-Mãe</a>
- <a href="/servicos/recuperacao-de-dados/" class="text-sm-muted-9">Recuperação de Dados</a>
- <a href="/servicos/backup/" class="text-sm-muted-9">Backup</a>
- <a href="/servicos/instalacao-de-drivers/" class="text-sm-muted-9">Instalação de Drivers</a>
- <a href="/servicos/otimizacao-de-computador/" class="text-sm-muted-9">Otimização de Computador</a>
- <a href="/servicos/manutencao-preventiva/" class="text-sm-muted-9">Manutenção Preventiva</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ <a href="/servicos/conserto-de-notebook/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Conserto de Notebook</a>
+ <a href="/servicos/conserto-de-computador/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Conserto de Computador</a>
+ <a href="/servicos/formatacao/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Formatação</a>
+ <a href="/servicos/instalacao-do-windows/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Instalação do Windows</a>
+ <a href="/servicos/remocao-de-virus/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Remoção de Vírus</a>
+ <a href="/servicos/limpeza-interna/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Limpeza Interna</a>
+ <a href="/servicos/troca-de-pasta-termica/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Troca de Pasta Térmica</a>
+ <a href="/servicos/upgrade-de-ssd/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Upgrade de SSD</a>
+ <a href="/servicos/upgrade-de-memoria-ram/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Upgrade de Memória RAM</a>
+ <a href="/servicos/troca-de-hd/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Troca de HD</a>
+ <a href="/servicos/reparo-de-placa-mae/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Reparo de Placa-Mãe</a>
+ <a href="/servicos/recuperacao-de-dados/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Recuperação de Dados</a>
+ <a href="/servicos/backup/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Backup</a>
+ <a href="/servicos/instalacao-de-drivers/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Instalação de Drivers</a>
+ <a href="/servicos/otimizacao-de-computador/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Otimização de Computador</a>
+ <a href="/servicos/manutencao-preventiva/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Manutenção Preventiva</a>
  
  </div>
  </div>
  
  
- <div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- Regiões Atendidas <i data-lucide="chevron-down" class="icon-4-4"></i>
+ <div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ Como Chegar <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- <a href="/areas/volta-redonda/" class="text-sm-muted-9">Volta Redonda</a>
- <a href="/areas/resende/" class="text-sm-muted-9">Resende</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ <a href="/areas/volta-redonda/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Volta Redonda</a>
+ <a href="/areas/resende/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">Resende</a>
  
  </div>
  </div>
  
- <a href="/#diferenciais" class="heading-base-4">Diferenciais</a>
- <a href="/#contato-info" class="heading-base-4">Contato</a>
+ <a href="/#diferenciais" class="py-4 text-base font-display font-bold text-white border-b border-white/5">Diferenciais</a>
+ <a href="/#contato-info" class="py-4 text-base font-display font-bold text-white border-b border-white/5">Contato</a>
  
- <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-accent-4 flex">
-  Falar no WhatsApp <i data-lucide="arrow-right" class="icon-4"></i>
+ <a href="https://wa.me/5524999294213?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="mt-6 bg-accent text-white px-5 py-3.5 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-accent-hover transition-colors">
+  Falar no WhatsApp <i data-lucide="arrow-right" class="w-4 h-4"></i>
  </a>
  </div>
 </div>
@@ -139,7 +139,7 @@
 <!-- 2. IMAGEM HORIZONTAL -->
 <section class="px-6 md:px-12 lg:px-24 mb-16 relative z-20">
   <div class="max-w-5xl mx-auto h-[30vh] md:h-[400px] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative">
-    <img src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&w=2000&q=80" alt="Recuperação de dados e arquivos em discos de armazenamento" class="w-full h-full object-cover grayscale-[30%]">
+    <picture><source srcset="/fotos/recuperacao-de-dados.avif" type="image/avif"><img src="/fotos/recuperacao-de-dados.jpg" alt="Recuperação de dados e arquivos em discos de armazenamento" width="1199" height="672" decoding="async" class="w-full h-full object-cover grayscale-[30%]"></picture>
     <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
   </div>
 </section>
@@ -259,7 +259,7 @@
         Falar no WhatsApp <i data-lucide="message-square" class="w-4 h-4"></i>
       </a>
       <a href="/areas/" class="magnetic-btn w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white">
-        <i data-lucide="map-pin" class="w-4 h-4"></i> Ver Regiões Atendidas
+        <i data-lucide="map-pin" class="w-4 h-4"></i> Como Chegar
       </a>
     </div>
   </div>
@@ -289,7 +289,7 @@
           <li><a href="/" class="hover:text-accent transition-colors">Início</a></li>
           <li><a href="/#servicos" class="hover:text-accent transition-colors">Serviços</a></li>
           
-          <li><a href="/areas/" class="hover:text-accent transition-colors">Regiões Atendidas</a></li>
+          <li><a href="/areas/" class="hover:text-accent transition-colors">Como Chegar</a></li>
           <li><a href="/#contato-info" class="hover:text-accent transition-colors">Contato</a></li>
         </ul>
       </div>

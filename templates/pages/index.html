@@ -376,5 +376,8 @@
 <script>
 lucide.createIcons();
 </script>
+<script>
+(function(){var btn=document.getElementById('mobile-menu-btn');var menu=document.getElementById('mobile-menu');var hb1=document.getElementById('hb1');var hb2=document.getElementById('hb2');var hb3=document.getElementById('hb3');if(!btn)return;var open=false;function toggle(){open=!open;if(open){menu.classList.remove('hidden');menu.classList.add('flex');document.body.style.overflow='hidden';hb1.style.transform='translateY(7px) rotate(45deg)';hb2.style.opacity='0';hb3.style.transform='translateY(-7px) rotate(-45deg)';hb3.style.width='20px';}else{menu.classList.add('hidden');menu.classList.remove('flex');document.body.style.overflow='';hb1.style.transform='';hb2.style.opacity='';hb3.style.transform='';hb3.style.width='';}}btn.addEventListener('click',toggle);})();
+</script>
 </body>
 </html>

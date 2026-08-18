@@ -1,42 +1,42 @@
-<div id="mobile-menu" class="flex-col-8 bg-[#050505]/98 hidden">
- <div class="flex-col-9 flex">
- <a href="/" class="heading-base-4 mobile-menu-link">Início</a>
- {{#if modules.services}}<div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- Serviços <i data-lucide="chevron-down" class="icon-4-4"></i>
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-[#0D0D12]/95 backdrop-blur-xl flex-col pt-24 px-6 pb-10 overflow-y-auto hidden lg:hidden">
+ <div class="flex flex-col">
+ <a href="/" class="py-4 text-base font-display font-bold text-white border-b border-white/5 mobile-menu-link">Início</a>
+ {{#if modules.services}}<div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ Serviços <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- {{#each services_nav}}<a href="/{{url_slugs.services}}/{{slug}}/" class="text-sm-muted-9">{{nav_label}}</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ {{#each services_nav}}<a href="/{{url_slugs.services}}/{{slug}}/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">{{nav_label}}</a>
  {{/each}}
  </div>
  </div>
  {{/if}}
- {{#if modules.catalog}}<div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- {{labels.catalog_nav}} <i data-lucide="chevron-down" class="icon-4-4"></i>
+ {{#if modules.catalog}}<div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ {{labels.catalog_nav}} <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- {{#each catalog_nav}}<a href="/{{url_slugs.catalog}}/{{slug}}/" class="text-sm-muted-9">{{name}}</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ {{#each catalog_nav}}<a href="/{{url_slugs.catalog}}/{{slug}}/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">{{name}}</a>
  {{/each}}
  </div>
  </div>
  {{/if}}
- {{#if modules.areas}}<div class="borderb-borderwhite5">
- <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="heading-base-5 flex">
- {{labels.areas_nav}} <i data-lucide="chevron-down" class="icon-4-4"></i>
+ {{#if modules.areas}}<div class="border-b border-white/5">
+ <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full flex items-center justify-between py-4 text-base font-display font-bold text-white">
+ {{labels.areas_nav}} <i data-lucide="chevron-down" class="w-4 h-4 text-textMuted"></i>
  </button>
- <div class="flex-col-10 hidden flex">
- {{#each areas_regions}}<a href="/{{url_slugs.areas}}/{{slug}}/" class="text-sm-muted-9">{{name}}</a>
+ <div class="hidden flex flex-col pb-3 pl-3">
+ {{#each areas_regions}}<a href="/{{url_slugs.areas}}/{{slug}}/" class="py-3 text-sm text-textMuted hover:text-white transition-colors block border-b border-white/5 leading-tight">{{name}}</a>
  {{/each}}
  </div>
  </div>
  {{/if}}
- <a href="/#diferenciais" class="heading-base-4">{{labels.differentiators_nav}}</a>
- <a href="/#contato-info" class="heading-base-4">Contato</a>
- {{#if modules.blog}}<a href="/{{url_slugs.blog}}/" class="heading-base-4">Blog</a>
+ <a href="/#diferenciais" class="py-4 text-base font-display font-bold text-white border-b border-white/5">{{labels.differentiators_nav}}</a>
+ <a href="/#contato-info" class="py-4 text-base font-display font-bold text-white border-b border-white/5">Contato</a>
+ {{#if modules.blog}}<a href="/{{url_slugs.blog}}/" class="py-4 text-base font-display font-bold text-white border-b border-white/5">Blog</a>
  {{/if}}
- <a href="https://wa.me/{{contact.whatsapp_number}}?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-accent-4 flex">
-  Falar no WhatsApp <i data-lucide="arrow-right" class="icon-4"></i>
+ <a href="https://wa.me/{{contact.whatsapp_number}}?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nova%20Techouse%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="mt-6 bg-accent text-white px-5 py-3.5 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-accent-hover transition-colors">
+  Falar no WhatsApp <i data-lucide="arrow-right" class="w-4 h-4"></i>
  </a>
  </div>
 </div>

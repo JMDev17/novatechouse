@@ -54,40 +54,40 @@ def render_vr_neighborhood(slug, name, context_desc, main_focus, primary_service
     sede_text = "onde está localizada a nossa sede física na Rua 16, 109 - Sala 8" if is_sede else "com acesso direto à nossa sede física na Vila Santa Cecília (Rua 16, 109 - Sala 8)"
     
     return f"""<!-- HEADER SEO -->
-<section class="relative-19 hero-bg">
-<div class="flex-col-center-5 flex">
-<h1 class="heading-5xl-3">
+<section class="relative w-full pt-32 pb-10 px-6 md:px-12 lg:px-24 hero-bg text-center">
+<div class="max-w-4xl mx-auto flex flex-col items-center gap-4">
+<h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold tracking-tighter leading-[1.1] text-white">
 Assistência Técnica para {name} em Volta Redonda
 </h1>
-<p class="text-lg-muted">
+<p class="text-lg text-textMuted max-w-2xl font-light leading-relaxed mt-2">
 Conserto de notebooks e computadores para moradores e empresas do bairro {name} em Volta Redonda - RJ. Atendimento técnico especializado.
 </p>
 </div>
 </section>
 
 <!-- CONTENT -->
-<section class="relative-25">
-<div class="maxw4xl-mdpx12-2">
+<section class="py-12 relative">
+<div class="max-w-4xl mx-auto px-6 md:px-12">
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Manutenção de computadores e notebooks para o bairro {name}</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Manutenção de computadores e notebooks para o bairro {name}</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Se você está no bairro {name}, em Volta Redonda, conta com a proximidade da <strong>Nova Techouse</strong>, {sede_text}.
 </p>
-<p class="text-lg-muted-3">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Nossa equipe é especializada em resolver problemas de hardware e software, focando em {main_focus}. Atendemos desde situações de travamento constante e superaquecimento até computadores que não ligam.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Realizamos diagnósticos transparentes e manutenções eficientes para garantir que seu equipamento volte a funcionar com velocidade e estabilidade.
 </p>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Serviços mais procurados por moradores do {name}</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Serviços mais procurados por moradores do {name}</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Oferecemos soluções completas para notebooks e computadores de mesa. Entre as principais especialidades solicitadas por clientes da região destacam-se:
 </p>
-<ul class="text-base-muted-3 space-y-2 mb6">
+<ul class="text-textMuted leading-relaxed text-lg space-y-2 mb-6">
 <li>• <strong>Conserto de Notebook:</strong> Reparo de telas, dobradiças da carcaça, teclados e circuitos elétricos.</li>
 <li>• <strong>Conserto de Computador:</strong> Diagnóstico de fontes de alimentação, placas de vídeo e placas-mãe.</li>
 <li>• <strong>Upgrade de SSD & RAM:</strong> Instalação de armazenamento ultra-rápido e ampliação de memória.</li>
@@ -96,36 +96,36 @@ Oferecemos soluções completas para notebooks e computadores de mesa. Entre as 
 </ul>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Por que escolher a Nova Techouse em Volta Redonda?</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Por que escolher a Nova Techouse em Volta Redonda?</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Nossa localização estratégica na Vila Santa Cecília facilita a entrega e retirada de equipamentos para quem reside ou trabalha no {name}.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Trabalhamos com agilidade e compromisso técnico para que você não fique parado por falhas no computador.
 </p>
 </div>
 
-<div class="flex flex mt8 mb8">
-<a href="/{{{{url_slugs.areas}}}}/volta-redonda/" class="text-sm-7">Voltar para Bairros de Volta Redonda</a>
-<span class="textwhite20">|</span>
-<a href="/{{{{url_slugs.areas}}}}/" class="text-sm-7">Regiões Atendidas</a>
+<div class="flex items-center gap-4 mt-8 mb-8">
+<a href="/{{{{url_slugs.areas}}}}/volta-redonda/" class="text-accent hover:underline text-sm font-semibold">Voltar para Bairros de Volta Redonda</a>
+<span class="text-white/20">|</span>
+<a href="/{{{{url_slugs.areas}}}}/" class="text-accent hover:underline text-sm font-semibold">Como Chegar</a>
 </div>
 
 </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="relative-28 hero-bg">
-<div class="maxw3xl">
-<h2 class="heading-4xl-2">Precisa de assistência técnica no {name}?</h2>
-<p class="text-lg-muted-5">Fale com a Nova Techouse no WhatsApp e traga seu equipamento para avaliação em Volta Redonda.</p>
-<div class="flex-col-center-6 flex">
-<a href="https://wa.me/{{{{contact.whatsapp_number}}}}?text=Olá! Vim pelo site da Nova Techouse. Moro no bairro {name} em Volta Redonda e preciso de assistência técnica." class="btn-cta-lg magnetic-btn flex">
-<i data-lucide="message-square" class="icon-4"></i> Falar no WhatsApp
+<section class="py-24 relative border-t border-accent/20 hero-bg text-center">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-4xl font-display font-bold mb-6 text-white">Precisa de assistência técnica no {name}?</h2>
+<p class="text-textMuted text-base mb-8">Fale com a Nova Techouse no WhatsApp e traga seu equipamento para avaliação em Volta Redonda.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="https://wa.me/{{{{contact.whatsapp_number}}}}?text=Olá! Vim pelo site da Nova Techouse. Moro no bairro {name} em Volta Redonda e preciso de assistência técnica." class="magnetic-btn w-full sm:w-auto bg-accent text-white px-8 py-4 rounded-full text-sm font-bold flex items-center justify-center gap-2 hover:bg-accent-hover transition-all shadow-lg shadow-accent/25">
+<i data-lucide="message-square" class="w-4 h-4"></i> Falar no WhatsApp
 </a>
-<a href="https://maps.google.com/?q={{{{contact.maps_query}}}}" target="_blank" class="btn-outline-10 magnetic-btn flex">
-<i data-lucide="map-pin" class="icon-4"></i> Ver localização da loja
+<a href="https://maps.google.com/?q={{{{contact.maps_query}}}}" target="_blank" class="magnetic-btn w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white">
+<i data-lucide="map-pin" class="w-4 h-4"></i> Ver localização da loja
 </a>
 </div>
 </div>
@@ -134,40 +134,40 @@ Trabalhamos com agilidade e compromisso técnico para que você não fique parad
 
 def render_resende_neighborhood(slug, name, context_desc, main_focus, primary_service, secondary_service):
     return f"""<!-- HEADER SEO -->
-<section class="relative-19 hero-bg">
-<div class="flex-col-center-5 flex">
-<h1 class="heading-5xl-3">
+<section class="relative w-full pt-32 pb-10 px-6 md:px-12 lg:px-24 hero-bg text-center">
+<div class="max-w-4xl mx-auto flex flex-col items-center gap-4">
+<h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold tracking-tighter leading-[1.1] text-white">
 Assistência Técnica para {name} em Resende - RJ
 </h1>
-<p class="text-lg-muted">
+<p class="text-lg text-textMuted max-w-2xl font-light leading-relaxed mt-2">
 Atendimento de assistência técnica especializada em notebooks e computadores para moradores e empresas do bairro {name} em Resende - RJ.
 </p>
 </div>
 </section>
 
 <!-- CONTENT -->
-<section class="relative-25">
-<div class="maxw4xl-mdpx12-2">
+<section class="py-12 relative">
+<div class="max-w-4xl mx-auto px-6 md:px-12">
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Suporte técnico de informática para a região do {name} em Resende</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Suporte técnico de informática para a região do {name} em Resende</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 A <strong>Nova Techouse</strong> presta atendimento especializado para clientes localizados no bairro {name}, em Resende - RJ.
 </p>
-<p class="text-lg-muted-3">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Oferecemos soluções de qualidade para quem necessita de {main_focus}. Nossos técnicos avaliam detalhadamente cada equipamento para determinar a solução mais eficiente e segura.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Nossa sede física está localizada na Vila Santa Cecília, em Volta Redonda - RJ, e atendemos com total dedicação os clientes de Resende que buscam um serviço confiável de manutenção.
 </p>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Principais serviços disponíveis para clientes de Resende</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Principais serviços disponíveis para clientes de Resende</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Moradores do bairro {name} encontram na Nova Techouse suporte completo para diversas demandas de hardware e software:
 </p>
-<ul class="text-base-muted-3 space-y-2 mb6">
+<ul class="text-textMuted leading-relaxed text-lg space-y-2 mb-6">
 <li>• <strong>Conserto de Notebook:</strong> Diagnósticos de tela, teclado, bateria e reparo de carcaça.</li>
 <li>• <strong>Conserto de Computador:</strong> Reparos em desktops de escritório e computadores pessoais.</li>
 <li>• <strong>Upgrade de SSD & Memória RAM:</strong> Aceleramento expressivo de leitura e capacidade multitarefa.</li>
@@ -176,33 +176,33 @@ Moradores do bairro {name} encontram na Nova Techouse suporte completo para dive
 </ul>
 </div>
 
-<div class="mb16">
-<h2 class="heading-3xl-7">Atendimento ágil via WhatsApp</h2>
-<p class="text-lg-muted-3">
+<div class="mb-16">
+<h2 class="text-3xl font-display font-bold mb-6 text-white">Atendimento ágil via WhatsApp</h2>
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Você pode esclarecer suas dúvidas sobre o funcionamento do seu equipamento diretamente com nossa equipe de suporte.
 </p>
-<p class="text-lg-muted-4">
+<p class="text-textMuted leading-relaxed mb-4 text-lg">
 Oferecemos orientação clara e transparente antes da realização de qualquer manutenção.
 </p>
 </div>
 
-<div class="flex flex mt8 mb8">
-<a href="/{{{{url_slugs.areas}}}}/resende/" class="text-sm-7">Voltar para Atendimento em Resende</a>
-<span class="textwhite20">|</span>
-<a href="/{{{{url_slugs.areas}}}}/" class="text-sm-7">Regiões Atendidas</a>
+<div class="flex items-center gap-4 mt-8 mb-8">
+<a href="/{{{{url_slugs.areas}}}}/resende/" class="text-accent hover:underline text-sm font-semibold">Voltar para Atendimento em Resende</a>
+<span class="text-white/20">|</span>
+<a href="/{{{{url_slugs.areas}}}}/" class="text-accent hover:underline text-sm font-semibold">Como Chegar</a>
 </div>
 
 </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="relative-28 hero-bg">
-<div class="maxw3xl">
-<h2 class="heading-4xl-2">Mora no {name} em Resende e precisa de ajuda técnica?</h2>
-<p class="text-lg-muted-5">Converse com a equipe da Nova Techouse pelo WhatsApp para tirar dúvidas sobre seu computador ou notebook.</p>
-<div class="flex-col-center-6 flex">
-<a href="https://wa.me/{{{{contact.whatsapp_number}}}}?text=Olá! Vim pelo site da Nova Techouse. Sou do bairro {name} em Resende e preciso de assistência técnica." class="btn-cta-lg magnetic-btn flex">
-<i data-lucide="message-square" class="icon-4"></i> Falar no WhatsApp
+<section class="py-24 relative border-t border-accent/20 hero-bg text-center">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-4xl font-display font-bold mb-6 text-white">Mora no {name} em Resende e precisa de ajuda técnica?</h2>
+<p class="text-textMuted text-base mb-8">Converse com a equipe da Nova Techouse pelo WhatsApp para tirar dúvidas sobre seu computador ou notebook.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="https://wa.me/{{{{contact.whatsapp_number}}}}?text=Olá! Vim pelo site da Nova Techouse. Sou do bairro {name} em Resende e preciso de assistência técnica." class="magnetic-btn w-full sm:w-auto bg-accent text-white px-8 py-4 rounded-full text-sm font-bold flex items-center justify-center gap-2 hover:bg-accent-hover transition-all shadow-lg shadow-accent/25">
+<i data-lucide="message-square" class="w-4 h-4"></i> Falar no WhatsApp
 </a>
 </div>
 </div>
