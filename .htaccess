@@ -1,4 +1,5 @@
 RewriteEngine On
 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} ^www\.techousepc\.com\.br$ [NC]
+RewriteRule ^ https://techousepc.com.br%{REQUEST_URI} [R=301,L]
