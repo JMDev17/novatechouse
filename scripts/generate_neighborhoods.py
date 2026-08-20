@@ -51,7 +51,7 @@ RESENDE_NEIGHBORHOODS = [
 
 def render_vr_neighborhood(slug, name, context_desc, main_focus, primary_service, secondary_service):
     is_sede = (slug == "vila-santa-cecilia")
-    sede_text = "onde está localizada a nossa sede física na Rua 16, 109 - Sala 8" if is_sede else "com acesso direto à nossa sede física na Vila Santa Cecília (Rua 16, 109 - Sala 8)"
+    sede_text = "onde está localizada a nossa sede física na Rua 16, 109 - Loja 8" if is_sede else "com acesso direto à nossa sede física na Vila Santa Cecília (Rua 16, 109 - Loja 8)"
     
     return f"""<!-- HEADER SEO -->
 <section class="relative w-full pt-32 pb-10 px-6 md:px-12 lg:px-24 hero-bg text-center">

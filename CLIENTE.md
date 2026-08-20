@@ -14,7 +14,7 @@
 
 **Endereço:**
 
-Rua 16, 109 - Sala 8
+Rua 16, 109 - Loja 8
 Vila Santa Cecília
 Volta Redonda - RJ
 CEP 27260-110

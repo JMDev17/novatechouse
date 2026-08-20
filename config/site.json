@@ -14,19 +14,19 @@
     "whatsapp_number": "5524999294213",
     "email": "vendasvr@techousepc.com.br",
     "address": {
-      "street": "Rua 16, 109 - Sala 8",
+      "street": "Rua 16, 109 - Loja 8",
       "neighborhood": "Vila Santa Cecília",
       "city": "Volta Redonda",
       "state": "RJ",
       "zip": "27260-110",
-      "line1": "Rua 16, 109 - Sala 8",
+      "line1": "Rua 16, 109 - Loja 8",
       "line2": "Vila Santa Cecília — Volta Redonda - RJ",
       "line3": "CEP 27260-110",
-      "footer_line": "Rua 16, 109 - Sala 8, Vila Santa Cecília, Volta Redonda - RJ"
+      "footer_line": "Rua 16, 109 - Loja 8, Vila Santa Cecília, Volta Redonda - RJ"
     },
     "hours_highlight": "Segunda a Sexta das 9h às 18h",
     "hours_detail": "Segunda à Sexta: 09h às 18h",
-    "maps_query": "Nova+Techouse+Rua+16+109+Sala+8+Vila+Santa+Cecilia+Volta+Redonda+RJ",
+    "maps_query": "Nova+Techouse+Rua+16+109+Loja+8+Vila+Santa+Cecilia+Volta+Redonda+RJ",
     "maps_embed_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.874837562013!2d-44.1087797!3d-22.5186641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ea18f3a3f5a9f%3A0x1234567890abcdef!2sR.%2016%2C%20109%20-%20Vila%20Santa%20Cec%C3%ADlia%2C%20Volta%20Redonda%20-%20RJ%2C%2027260-110!5e0!3m2!1spt-BR!2sbr!4v1714589254322!5m2!1spt-BR!2sbr",
     "maps_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.874837562013!2d-44.1087797!3d-22.5186641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ea18f3a3f5a9f%3A0x1234567890abcdef!2sR.%2016%2C%20109%20-%20Vila%20Santa%20Cec%C3%ADlia%2C%20Volta%20Redonda%20-%20RJ%2C%2027260-110!5e0!3m2!1spt-BR!2sbr!4v1714589254322!5m2!1spt-BR!2sbr"
   },
@@ -69,8 +69,8 @@
     "differentiators_image_2_alt": "Diagnóstico e reparo de hardware"
   },
   "seo": {
-    "domain": "novatechouse.com.br",
-    "base_url": "https://novatechouse.com.br"
+    "domain": "techousepc.com.br",
+    "base_url": "https://techousepc.com.br"
   },
   "modules": {
     "services": true,
