@@ -1,5 +1,13 @@
 RewriteEngine On
 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+# Força HTTPS - checa tanto %{HTTPS} (SSL terminado direto no Apache, o caso
+# mais comum em hospedagem compartilhada) quanto X-Forwarded-Proto (SSL
+# terminado num proxy/CDN na frente). So redireciona se NENHUM dos dois
+# indicar https, evitando loop de redirecionamento em qualquer um dos casos.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://techousepc.com.br%{REQUEST_URI} [R=301,L]
+
+# Remove o www
 RewriteCond %{HTTP_HOST} ^www\.techousepc\.com\.br$ [NC]
 RewriteRule ^ https://techousepc.com.br%{REQUEST_URI} [R=301,L]
